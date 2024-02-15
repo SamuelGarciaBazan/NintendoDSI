@@ -1,0 +1,86 @@
+.ContPrincipal {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    height: 506px;
+    width: 1042px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    position: relative;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.ContIzq {
+    justify-content: space-between;
+    align-items: stretch;
+    height: 270px;
+    width: 99px;
+    flex-direction: column;
+    translate: 0 0;
+}
+
+.ContDer {
+    height: 270px;
+    width: 108px;
+    translate: 0 0;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ContPersIzq {
+    flex-direction: row;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.ContTextosIzq {
+    width: 63px;
+    padding-left: 3px;
+}
+
+.ContPersDer {
+    flex-direction: row-reverse;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.ContTextosDer {
+    width: 63px;
+    padding-left: 3px;
+}
+
+.Icon {
+    height: 40px;
+    width: 40px;
+    background-image: url('project://database/Assets/Images/Champs/ksante.png?fileID=2800000&guid=d7b55fabc8d48c24fb3b6b5b1e2bdf6c&type=3#ksante');
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    align-items: flex-start;
+    transform-origin: center;
+    margin-right: 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(195, 158, 0);
+    border-right-color: rgb(195, 158, 0);
+    border-top-color: rgb(195, 158, 0);
+    border-bottom-color: rgb(195, 158, 0);
+}
+
+.textFont {
+    color: rgba(0, 0, 0, 255);
+}

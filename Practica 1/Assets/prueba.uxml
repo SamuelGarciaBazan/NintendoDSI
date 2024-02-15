@@ -1,12 +1,91 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/prueba.uss?fileID=7433441132597879392&amp;guid=e332b4acd65e1d64591a0682475c6c2b&amp;type=3#prueba" />
-    <ui:VisualElement name="Main" style="height: 456px; width: 352px; background-image: url(&apos;project://database/Assets/Images/map-north.png?fileID=2800000&amp;guid=e1f41742669194b4a80ca35754e9158b&amp;type=3#map-north&apos;);">
-        <ui:VisualElement name="ContenedorIzq" style="justify-content: space-between; align-items: stretch; height: 270px; width: 99px; flex-direction: column; translate: 20px 69px;">
-            <ui:VisualElement style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/ksante.png?fileID=2800000&amp;guid=d7b55fabc8d48c24fb3b6b5b1e2bdf6c&amp;type=3#ksante&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center;" />
-            <ui:VisualElement style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/nunu.png?fileID=2800000&amp;guid=2d677406c112bd040b6b404389de3f21&amp;type=3#nunu&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center;" />
-            <ui:VisualElement style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/ahri.png?fileID=2800000&amp;guid=2d4375f593618724e93fa6da6075123e&amp;type=3#ahri&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center;" />
-            <ui:VisualElement style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/aphelios.png?fileID=2800000&amp;guid=a0b09f5ad6b5b9b4cac0eaf31fa27887&amp;type=3#aphelios&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center;" />
-            <ui:VisualElement style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/karma.png?fileID=2800000&amp;guid=72023537034012d43827ebf962096530&amp;type=3#karma&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center;" />
+    <ui:VisualElement name="Main" style="height: 530px; width: 1044px; background-image: url(&apos;project://database/Assets/Images/map-north.png?fileID=2800000&amp;guid=e1f41742669194b4a80ca35754e9158b&amp;type=3#map-north&apos;); flex-direction: column; flex-wrap: nowrap; align-items: stretch; justify-content: flex-start; -unity-background-scale-mode: stretch-to-fill;">
+        <ui:VisualElement name="Cont" class="ContPrincipal">
+            <ui:VisualElement name="ContenedorIzq" class="ContIzq">
+                <ui:VisualElement name="ContPers" class="ContPersIzq">
+                    <ui:VisualElement name="Icon" class="Icon" />
+                    <ui:VisualElement name="Textos" class="ContTextosIzq">
+                        <ui:Label text="K´sante" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; font-size: 8px;" />
+                        <ui:Label text="TOP" display-tooltip-when-elided="true" style="height: 15px;" />
+                        <ui:Label text="ADG Danzhu" display-tooltip-when-elided="true" style="font-size: 8px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ContPers" class="ContPersIzq" style="flex-direction: row; margin-right: 0; padding-right: 0;">
+                    <ui:VisualElement name="Icon" class="Icon" style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/nunu.png?fileID=2800000&amp;guid=2d677406c112bd040b6b404389de3f21&amp;type=3#nunu&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center; margin-right: 0;" />
+                    <ui:VisualElement name="Textos" class="ContTextosIzq" style="width: 63px; padding-left: 3px;">
+                        <ui:Label text="Nunu y Willump" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; font-size: 8px;" />
+                        <ui:Label text="JUNGLA" display-tooltip-when-elided="true" name="Label" style="height: 15px;" />
+                        <ui:Label text="ADG Jimbo" display-tooltip-when-elided="true" style="font-size: 8px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ContPers" class="ContPersIzq" style="flex-direction: row; margin-right: 0; padding-right: 0;">
+                    <ui:VisualElement name="Icon" class="Icon" style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/syndra.png?fileID=2800000&amp;guid=029e16e1ed515dd4aac7447e20cc2bfe&amp;type=3#syndra&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center; margin-right: 0;" />
+                    <ui:VisualElement name="Textos" class="ContTextosIzq" style="width: 63px; padding-left: 3px;">
+                        <ui:Label text="Syndra" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; font-size: 8px;" />
+                        <ui:Label text="MID" display-tooltip-when-elided="true" style="height: 15px;" />
+                        <ui:Label text="ADG Vivu" display-tooltip-when-elided="true" style="font-size: 8px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ContPers" class="ContPersIzq" style="flex-direction: row; margin-right: 0; padding-right: 0;">
+                    <ui:VisualElement name="Icon" class="Icon" style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/aphelios.png?fileID=2800000&amp;guid=a0b09f5ad6b5b9b4cac0eaf31fa27887&amp;type=3#aphelios&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center; margin-right: 0;" />
+                    <ui:VisualElement name="Textos" class="ContTextosIzq" style="width: 63px; padding-left: 3px;">
+                        <ui:Label text="Aphelios" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; font-size: 8px;" />
+                        <ui:Label text="ADC" display-tooltip-when-elided="true" style="height: 15px;" />
+                        <ui:Label text="ADG Dahyuui" display-tooltip-when-elided="true" style="font-size: 8px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ContPers" class="ContPersIzq" style="flex-direction: row; margin-right: 0; padding-right: 0;">
+                    <ui:VisualElement name="Icon" class="Icon" style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/karma.png?fileID=2800000&amp;guid=72023537034012d43827ebf962096530&amp;type=3#karma&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center; margin-right: 0;" />
+                    <ui:VisualElement name="Textos" class="ContTextosIzq" style="width: 63px; padding-left: 3px;">
+                        <ui:Label text="Karma" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; font-size: 8px;" />
+                        <ui:Label text="SUPPORT" display-tooltip-when-elided="true" style="height: 15px;" />
+                        <ui:Label text="ADG Okoli" display-tooltip-when-elided="true" style="font-size: 8px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ContenedorDer" class="ContDer">
+                <ui:VisualElement name="ContPers" class="ContPersDer">
+                    <ui:VisualElement name="Icon" class="Icon" style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/akali.png?fileID=2800000&amp;guid=370371deabaf82c43afcdafd4e8a3d84&amp;type=3#akali&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center; margin-right: 0;" />
+                    <ui:VisualElement name="Textos" class="ContTextosDer">
+                        <ui:Label text="Akali" display-tooltip-when-elided="true" style="-unity-text-align: middle-right; font-size: 8px;" />
+                        <ui:Label text="TOP" display-tooltip-when-elided="true" style="height: 15px; -unity-text-align: upper-right;" />
+                        <ui:Label text="Lobo" display-tooltip-when-elided="true" style="font-size: 8px; -unity-text-align: upper-right;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ContPers" class="ContPersDer" style="flex-direction: row-reverse; margin-right: 0; padding-right: 0;">
+                    <ui:VisualElement name="Icon" class="Icon" style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/neeko.png?fileID=2800000&amp;guid=e1e858b999bb8b44da7b519dff642013&amp;type=3#neeko&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center; margin-right: 0;" />
+                    <ui:VisualElement name="Textos" class="ContTextosDer" style="width: 63px; padding-left: 3px;">
+                        <ui:Label text="Neeko" display-tooltip-when-elided="true" style="-unity-text-align: middle-right; font-size: 8px;" />
+                        <ui:Label text="JUNGLA" display-tooltip-when-elided="true" name="Label" style="height: 15px; -unity-text-align: upper-right;" />
+                        <ui:Label text="Azul" display-tooltip-when-elided="true" style="font-size: 8px; -unity-text-align: upper-right;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ContPers" class="ContPersDer" style="flex-direction: row-reverse; margin-right: 0; padding-right: 0;">
+                    <ui:VisualElement name="Icon" class="Icon" style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/ahri.png?fileID=2800000&amp;guid=2d4375f593618724e93fa6da6075123e&amp;type=3#ahri&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center; margin-right: 0;" />
+                    <ui:VisualElement name="Textos" class="ContTextosDer" style="width: 63px; padding-left: 3px;">
+                        <ui:Label text="Ahri" display-tooltip-when-elided="true" style="-unity-text-align: middle-right; font-size: 8px;" />
+                        <ui:Label text="MID" display-tooltip-when-elided="true" style="height: 15px; -unity-text-align: upper-right;" />
+                        <ui:Label text="Picuchillo" display-tooltip-when-elided="true" style="font-size: 8px; -unity-text-align: upper-right;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ContPers" class="ContPersDer" style="flex-direction: row-reverse; margin-right: 0; padding-right: 0;">
+                    <ui:VisualElement name="Icon" class="Icon" style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/zeri.png?fileID=2800000&amp;guid=ece4ae9778eb6f74fb4f2db55967f676&amp;type=3#zeri&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center; margin-right: 0;" />
+                    <ui:VisualElement name="Textos" class="ContTextosDer" style="width: 63px; padding-left: 3px;">
+                        <ui:Label text="Zeri" display-tooltip-when-elided="true" style="-unity-text-align: middle-right; font-size: 8px;" />
+                        <ui:Label text="ADC" display-tooltip-when-elided="true" style="height: 15px; -unity-text-align: upper-right;" />
+                        <ui:Label text="Gromp" display-tooltip-when-elided="true" style="font-size: 8px; -unity-text-align: upper-right;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ContPers" class="ContPersDer" style="flex-direction: row-reverse; margin-right: 0; padding-right: 0;">
+                    <ui:VisualElement name="Icon" class="Icon" style="height: 40px; width: 40px; background-image: url(&apos;project://database/Assets/Images/Champs/ashe.png?fileID=2800000&amp;guid=228c14f38a661ed4fb28c27a99f11619&amp;type=3#ashe&apos;); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; align-items: flex-start; transform-origin: center; margin-right: 0;" />
+                    <ui:VisualElement name="Textos" class="ContTextosDer" style="width: 63px; padding-left: 3px;">
+                        <ui:Label text="Ashe" display-tooltip-when-elided="true" style="-unity-text-align: middle-right; font-size: 8px;" />
+                        <ui:Label text="SUPPORT" display-tooltip-when-elided="true" style="height: 15px; -unity-text-align: upper-right;" />
+                        <ui:Label text="Golem" display-tooltip-when-elided="true" style="font-size: 8px; -unity-text-align: upper-right;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
