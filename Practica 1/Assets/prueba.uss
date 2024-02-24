@@ -47,6 +47,10 @@
 .ContTextosIzq {
     width: 63px;
     padding-left: 3px;
+    -unity-text-align: upper-left;
+    white-space: normal;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .ContPersDer {
@@ -58,6 +62,12 @@
 .ContTextosDer {
     width: 63px;
     padding-left: 3px;
+}
+
+.textFont {
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-left;
+    white-space: nowrap;
 }
 
 .Icon {
@@ -79,8 +89,4 @@
     border-right-color: rgb(195, 158, 0);
     border-top-color: rgb(195, 158, 0);
     border-bottom-color: rgb(195, 158, 0);
-}
-
-.textFont {
-    color: rgba(0, 0, 0, 255);
 }
