@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/prueba.uss?fileID=7433441132597879392&amp;guid=e332b4acd65e1d64591a0682475c6c2b&amp;type=3#prueba" />
     <ui:VisualElement name="Main" style="height: 519px; width: 902px; background-image: url(&apos;project://database/Assets/Images/map-north.png?fileID=2800000&amp;guid=e1f41742669194b4a80ca35754e9158b&amp;type=3#map-north&apos;); flex-direction: column; flex-wrap: nowrap; align-items: stretch; justify-content: flex-start; -unity-background-scale-mode: stretch-to-fill;">
         <ui:VisualElement name="Cont" class="ContPrincipal" style="height: 504px; width: 900px;">
-            <ui:VisualElement name="ContenedorIzq" class="ContIzq">
+            <ui:VisualElement name="ContenedorIzq" class="ContIzq" style="flex-direction: column;">
                 <ui:VisualElement name="ContPers" class="ContPersIzq">
                     <ui:VisualElement name="Icon" class="Icon" />
                     <ui:VisualElement name="Textos" class="ContTextosIzq">
