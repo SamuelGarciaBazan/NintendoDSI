@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -14,6 +12,7 @@ public class ExampleResizer : PointerManipulator
 
     public ExampleResizer()
     {
+        Debug.Log("Constructora Resizer");
         m_PointerId = -1;
         activators.Add(new ManipulatorActivationFilter { button = MouseButton.LeftMouse });
         m_Active = false;
@@ -21,6 +20,7 @@ public class ExampleResizer : PointerManipulator
 
     protected override void RegisterCallbacksOnTarget()
     {
+        Debug.Log("RegisterCallbacks");
         target.RegisterCallback<PointerDownEvent>(OnPointerDown);
         target.RegisterCallback<PointerUpEvent>(OnPointerUp);
         target.RegisterCallback<PointerMoveEvent>(OnPointerMove);
@@ -28,6 +28,7 @@ public class ExampleResizer : PointerManipulator
 
     protected override void UnregisterCallbacksFromTarget()
     {
+        Debug.Log("UnRegisterCallbacks");
         target.UnregisterCallback<PointerDownEvent>(OnPointerDown);
         target.UnregisterCallback<PointerUpEvent>(OnPointerUp);
         target.UnregisterCallback<PointerMoveEvent>(OnPointerMove);
@@ -36,7 +37,9 @@ public class ExampleResizer : PointerManipulator
 
     protected void OnPointerDown(PointerDownEvent e)
     {
-        if(m_Active)
+        Debug.Log("OnPointerDown");
+
+        if (m_Active)
         {
             e.StopImmediatePropagation();
             return;
@@ -44,7 +47,7 @@ public class ExampleResizer : PointerManipulator
 
         if(CanStartManipulation(e))
         {
-            //Debug.Log("downnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
+            Debug.Log("downnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
             m_Start = e.localPosition;
             m_StartSize  = target.layout.size;
             m_PointerId = e.pointerId;
@@ -56,11 +59,12 @@ public class ExampleResizer : PointerManipulator
     }
     protected void OnPointerMove(PointerMoveEvent e)
     {
+        Debug.Log("OnPointerMove");
 
         if (!m_Active || !target.HasPointerCapture(m_PointerId)) {
             return;
         }
-        //Debug.Log("moveeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+        Debug.Log("moveeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
 
         Vector2 diff = e.localPosition - m_Start;
 
@@ -74,12 +78,13 @@ public class ExampleResizer : PointerManipulator
     }
     protected void OnPointerUp(PointerUpEvent e)
     {
-        
+        Debug.Log("OnPointerUp");
+
         if (!m_Active || !target.HasPointerCapture(m_PointerId)){
             return;
         }
        
-        //Debug.Log("uppppppppppppppppppppppppppppppppppppp");
+        Debug.Log("uppppppppppppppppppppppppppppppppppppp");
 
         m_Active = false;
         target.ReleasePointer(m_PointerId);

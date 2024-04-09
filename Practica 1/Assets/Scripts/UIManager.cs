@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
         UQueryBuilder<VisualElement> builder = new(rootve);
 
         //elemento del texto de seleccion de campeon
-        VisualElement contenedor = builder.Name("SelectText");
+        VisualElement contenedor = builder.Name("SelectText2427");
 
         //todos los elemtos con la clase "textFont"
         VisualElement contenedor2 = builder.Class("textFont");

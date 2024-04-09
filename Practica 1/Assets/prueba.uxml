@@ -46,7 +46,7 @@
             </ui:VisualElement>
             <ui:VisualElement name="ContCentro" style="height: 328px; width: 586px; justify-content: space-between; align-items: stretch; flex-direction: row;">
                 <ui:Slider picking-mode="Ignore" value="42" high-value="100" direction="Vertical" style="flex-direction: column; height: 327px; width: 27px; justify-content: center; align-items: center; padding-left: 0;" />
-                <ui:VisualElement name="SelectText">
+                <ui:VisualElement name="SelectText2427">
                     <ui:Label display-tooltip-when-elided="true" name="Label" text="Selecciona tu campeon" style="height: 20px; width: 98px; -unity-text-align: upper-center;" />
                 </ui:VisualElement>
                 <ui:Slider picking-mode="Ignore" value="42" high-value="100" direction="Vertical" style="flex-direction: column-reverse; height: 327px; width: 27px; justify-content: flex-end; align-items: center; padding-left: 0;" />
