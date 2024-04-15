@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Template name="ContainerCajas" src="project://database/Assets/ContainerCajas.uxml?fileID=9197481963319205126&amp;guid=0b7c0cc5f86d6b14b8ec9cbaa4527bc3&amp;type=3#ContainerCajas" />
+    <Style src="project://database/Assets/lab4.uss?fileID=7433441132597879392&amp;guid=7c2dd18132e54d244a64119c48f3b017&amp;type=3#lab4" />
+    <ui:VisualElement name="Cont" style="height: 604px; width: 1330px;">
+        <ui:VisualElement name="SubCont" style="height: 288px; width: 454px;">
+            <ui:Instance template="ContainerCajas" name="ContainerCajas" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

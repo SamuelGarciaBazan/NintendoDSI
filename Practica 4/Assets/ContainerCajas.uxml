@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Container" style="width: 1334px; height: 588px; flex-wrap: wrap; flex-direction: row; justify-content: space-between;">
+        <ui:VisualElement name="Caja1" class="Caja" />
+        <ui:VisualElement name="Caja2" class="Caja" />
+        <ui:VisualElement name="Caja3" class="Caja" />
+        <ui:VisualElement name="Caja4" class="Caja" />
+        <ui:VisualElement name="Caja5" class="Caja" />
+        <ui:VisualElement name="Caja6" class="Caja" />
+        <ui:VisualElement name="Caja7" class="Caja" />
+        <ui:VisualElement name="Caja8" class="Caja" />
+    </ui:VisualElement>
+</ui:UXML>
