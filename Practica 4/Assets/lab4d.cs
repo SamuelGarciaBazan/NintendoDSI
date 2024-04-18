@@ -25,7 +25,6 @@ public class lab4d : VisualElement
         }
     }
 
-    public Background style;
 
     int nItems;
     public int Items
@@ -43,7 +42,6 @@ public class lab4d : VisualElement
 
         string image = "";
 
-        //style = Resources.Load<StyleSheet>("Images/espada").ConvertTo<StyleBackground>();
         
         VisualElement item;
         for (int i = 0; i < 5; i++)
@@ -53,14 +51,16 @@ public class lab4d : VisualElement
             item.style.width = 100;
             item.style.height = 100;
             item.name = "item" + i.ToString();  
-            item.style.backgroundColor = Color.white;   
-            //item.style.backgroundImage = style;   
-            items.Add(item);
+            item.style.opacity = 0.5f; 
+            item.AddToClassList("Escudo");
 
+            items.Add(item);
+            
             hierarchy.Add(item);
         }
 
         
+
     }
 
     void prueba()
@@ -70,12 +70,12 @@ public class lab4d : VisualElement
 
         for(int i = 0; i < 5; i++)
         {
-            items[i].style.backgroundColor = Color.white;
+            items[i].style.opacity = 0.5f;
         }
 
         for (int i = 0; i < Mathf.Min(nItems,5) ; i++)
         {
-            items[i].style.backgroundColor = Color.green;
+            items[i].style.opacity = 1;
         }
     }
 }

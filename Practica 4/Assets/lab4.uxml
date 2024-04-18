@@ -1,4 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="ContainerCajas" src="project://database/Assets/ContainerCajas.uxml?fileID=9197481963319205126&amp;guid=0b7c0cc5f86d6b14b8ec9cbaa4527bc3&amp;type=3#ContainerCajas" />
     <Style src="project://database/Assets/lab4.uss?fileID=7433441132597879392&amp;guid=7c2dd18132e54d244a64119c48f3b017&amp;type=3#lab4" />
-    <lab4d Items="3" style="flex-direction: row; justify-content: space-around;" />
+    <ui:VisualElement name="Fondo" style="background-image: url(&apos;project://database/Assets/Images/map-north.png?fileID=2800000&amp;guid=214b9652c51598f488f4fb371ccc3e6e&amp;type=3#map-north&apos;); width: 1622px; height: 888px;">
+        <ui:VisualElement style="height: 640px; width: 1342px;">
+            <ui:Instance template="ContainerCajas" name="ContainerCajas" style="height: 867px; width: 1330px;" />
+            <ui:Instance template="ContainerCajas" name="ContainerCajas" style="height: 867px; width: 1330px;" />
+            <lab4d Items="3" style="flex-direction: row; justify-content: space-around; height: 500px; width: 1293px;" />
+            <ui:Label text="Texto con gradiente" display-tooltip-when-elided="true" name="text" style="height: 63px; font-size: 50px; color: rgba(255, 255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
 </ui:UXML>
