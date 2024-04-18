@@ -15,11 +15,9 @@ public class Lab3 : MonoBehaviour
 
         List<VisualElement> contenedor = builder.Name("Icon").ToList();
 
-        VisualElement textoSeleccion = builder.Name("SelectText2427");
-
-        textoSeleccion.AddManipulator(new ExampleResizer());
-
         contenedor.ForEach(c => c.AddManipulator(new Lab3Manipulator()));
+
+        contenedor.ForEach(c => c.AddManipulator(new ExampleResizer()));
     }
    
 }

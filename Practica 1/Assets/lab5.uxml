@@ -1,11 +1,29 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="plantilla" style="height: 451px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;);">
-        <ui:VisualElement name="top" style="height: 154px; justify-content: flex-start; align-items: stretch; background-image: url(&apos;project://database/Assets/Images/Champs/akali.png?fileID=2800000&amp;guid=370371deabaf82c43afcdafd4e8a3d84&amp;type=3#akali&apos;); -unity-background-scale-mode: scale-to-fit;" />
-        <ui:VisualElement name="mid" style="height: 170px;">
-            <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />
+    <Style src="project://database/Assets/lab5.uss?fileID=7433441132597879392&amp;guid=5735db23dfa4bc94b9b3d5dc13d5b59d&amp;type=3#lab5" />
+    <ui:VisualElement name="contenedor" style="flex-direction: row; justify-content: space-between; align-items: stretch;">
+        <ui:VisualElement name="izquierda" style="width: 310px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;); background-color: rgb(197, 68, 68); -unity-background-image-tint-color: rgb(152, 84, 84); align-items: stretch; justify-content: space-between;">
+            <ui:VisualElement name="header" style="flex-direction: row;">
+                <ui:VisualElement name="ashe" style="background-image: url(&apos;project://database/Assets/Images/Champs/ashe.png?fileID=2800000&amp;guid=228c14f38a661ed4fb28c27a99f11619&amp;type=3#ashe&apos;); width: 120px; height: 120px; flex-direction: row; align-items: center; justify-content: space-around; right: auto; position: relative;" />
+                <ui:VisualElement name="ahri" style="background-image: url(&apos;project://database/Assets/Images/Champs/ahri.png?fileID=2800000&amp;guid=2d4375f593618724e93fa6da6075123e&amp;type=3#ahri&apos;); width: 120px; height: 120px;" />
+                <ui:VisualElement name="aphelios" style="background-image: url(&apos;project://database/Assets/Images/Champs/aphelios.png?fileID=2800000&amp;guid=a0b09f5ad6b5b9b4cac0eaf31fa27887&amp;type=3#aphelios&apos;); width: 120px; height: 120px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="body">
+                <ui:TextField picking-mode="Ignore" label="Nombre" name="InputNombre" />
+            </ui:VisualElement>
+            <ui:VisualElement name="footer">
+                <ui:TextField picking-mode="Ignore" label="Apellido" name="InputApellido" />
+            </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="bottom" style="justify-content: flex-start; flex-direction: column; align-items: stretch; height: 130px;">
-            <ui:Label text="Label" display-tooltip-when-elided="true" name="Apellido" style="font-size: 50px; -unity-text-align: middle-center;" />
+        <ui:VisualElement name="derecha" style="width: 395px;">
+            <ui:VisualElement name="plantilla" style="height: 451px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;);">
+                <ui:VisualElement name="top" style="height: 154px; justify-content: flex-start; align-items: stretch; background-image: url(&apos;project://database/Assets/Images/Champs/akali.png?fileID=2800000&amp;guid=370371deabaf82c43afcdafd4e8a3d84&amp;type=3#akali&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                <ui:VisualElement name="mid" style="height: 170px;">
+                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="bottom" style="justify-content: flex-start; flex-direction: column; align-items: stretch; height: 130px;">
+                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Apellido" style="font-size: 50px; -unity-text-align: middle-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
