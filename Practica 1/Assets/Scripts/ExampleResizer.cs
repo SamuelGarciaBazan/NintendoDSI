@@ -23,7 +23,8 @@ public class ExampleResizer : PointerManipulator
         Debug.Log("RegisterCallbacks");
         target.RegisterCallback<PointerDownEvent>(OnPointerDown);
         target.RegisterCallback<PointerUpEvent>(OnPointerUp);
-        target.RegisterCallback<PointerMoveEvent>(OnPointerMove);
+        //target.RegisterCallback<PointerMoveEvent>(OnPointerMove);
+        target.RegisterCallback<WheelEvent>(OnMouseWheelMove);
     }
 
     protected override void UnregisterCallbacksFromTarget()
@@ -31,7 +32,8 @@ public class ExampleResizer : PointerManipulator
         Debug.Log("UnRegisterCallbacks");
         target.UnregisterCallback<PointerDownEvent>(OnPointerDown);
         target.UnregisterCallback<PointerUpEvent>(OnPointerUp);
-        target.UnregisterCallback<PointerMoveEvent>(OnPointerMove);
+        //target.UnregisterCallback<PointerMoveEvent>(OnPointerMove);
+        target.UnregisterCallback<WheelEvent>(OnMouseWheelMove);
     }
 
 
@@ -90,6 +92,16 @@ public class ExampleResizer : PointerManipulator
         target.ReleasePointer(m_PointerId);
         m_PointerId = -1;
         e.StopPropagation();
+    }
+
+    protected void OnMouseWheelMove(WheelEvent e)
+    {
+        if (!m_Active || !target.HasPointerCapture(m_PointerId))
+        {
+            return;
+        }
+        target.style.height = target.layout.size.y + e.delta.y * 10;
+        target.style.width = target.layout.size.x + e.delta.y * 10;
     }
 
 }
