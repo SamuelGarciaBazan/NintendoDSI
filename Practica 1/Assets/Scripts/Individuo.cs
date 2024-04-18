@@ -40,5 +40,11 @@ namespace Lab5b_namespace
                 }
             }
         }
+
+        public Individuo(string nombre,string apellido)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+        }
     }
 }
