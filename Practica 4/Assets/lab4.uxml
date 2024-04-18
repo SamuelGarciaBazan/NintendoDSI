@@ -5,8 +5,8 @@
         <ui:VisualElement style="height: 640px; width: 1342px;">
             <ui:Instance template="ContainerCajas" name="ContainerCajas" style="height: 867px; width: 1330px;" />
             <ui:Instance template="ContainerCajas" name="ContainerCajas" style="height: 867px; width: 1330px;" />
-            <lab4d Items="3" style="flex-direction: row; justify-content: space-around; height: 500px; width: 1293px;" />
-            <ui:Label text="Texto con gradiente" display-tooltip-when-elided="true" name="text" style="height: 63px; font-size: 50px; color: rgba(255, 255, 255, 255);" />
+            <lab4d Items="6" style="flex-direction: row; justify-content: space-around; height: 500px; width: 1293px;" />
+            <ui:Label text="Texto con gradiente" display-tooltip-when-elided="true" name="text" style="height: 63px; font-size: 50px; color: rgb(255, 255, 255);" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
