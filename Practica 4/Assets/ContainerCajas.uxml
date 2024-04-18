@@ -1,12 +1,12 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement name="Container" style="width: 1334px; height: 588px; flex-wrap: wrap; flex-direction: row; justify-content: space-between;">
-        <ui:VisualElement name="Caja1" class="Caja" />
-        <ui:VisualElement name="Caja2" class="Caja" />
-        <ui:VisualElement name="Caja3" class="Caja" />
-        <ui:VisualElement name="Caja4" class="Caja" />
-        <ui:VisualElement name="Caja5" class="Caja" />
-        <ui:VisualElement name="Caja6" class="Caja" />
-        <ui:VisualElement name="Caja7" class="Caja" />
-        <ui:VisualElement name="Caja8" class="Caja" />
+        <ui:VisualElement name="Caja1" class="Caja" style="background-image: url(&apos;project://database/Assets/Images/ahri.png?fileID=2800000&amp;guid=9f7240018d8a7cf4baddaf79214c7081&amp;type=3#ahri&apos;);" />
+        <ui:VisualElement name="Caja2" class="Caja" style="background-image: url(&apos;project://database/Assets/Images/akali.png?fileID=2800000&amp;guid=86b695ec0340cda4c996df29979058c1&amp;type=3#akali&apos;);" />
+        <ui:VisualElement name="Caja3" class="Caja" style="background-image: url(&apos;project://database/Assets/Images/aphelios.png?fileID=2800000&amp;guid=4a27102ea6d55f2468c450b296ce0ae1&amp;type=3#aphelios&apos;);" />
+        <ui:VisualElement name="Caja4" class="Caja" style="background-image: url(&apos;project://database/Assets/Images/ashe.png?fileID=2800000&amp;guid=1d5de05df417f9f44a05349c4b4d63ae&amp;type=3#ashe&apos;);" />
+        <ui:VisualElement name="Caja5" class="Caja" style="background-image: url(&apos;project://database/Assets/Images/karma.png?fileID=2800000&amp;guid=054aeedd93067db4db1b268b9ad86270&amp;type=3#karma&apos;);" />
+        <ui:VisualElement name="Caja6" class="Caja" style="background-image: url(&apos;project://database/Assets/Images/ksante.png?fileID=2800000&amp;guid=db867b91849c7fe46b66a9cc92d24fbf&amp;type=3#ksante&apos;);" />
+        <ui:VisualElement name="Caja7" class="Caja" style="background-image: url(&apos;project://database/Assets/Images/neeko.png?fileID=2800000&amp;guid=177d9b9f54fa4a944a873fd20154867a&amp;type=3#neeko&apos;);" />
+        <ui:VisualElement name="Caja8" class="Caja" style="background-image: url(&apos;project://database/Assets/Images/nunu.png?fileID=2800000&amp;guid=9cc63acb67cd00f4b9fce9136a2cdead&amp;type=3#nunu&apos;);" />
     </ui:VisualElement>
 </ui:UXML>
