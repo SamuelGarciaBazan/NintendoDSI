@@ -16,7 +16,7 @@
         </ui:VisualElement>
         <ui:VisualElement name="derecha" style="width: 395px;">
             <ui:VisualElement name="plantilla" style="height: 451px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;);">
-                <ui:VisualElement name="top" style="height: 154px; justify-content: flex-start; align-items: stretch; background-image: url(&apos;project://database/Assets/Images/Champs/akali.png?fileID=2800000&amp;guid=370371deabaf82c43afcdafd4e8a3d84&amp;type=3#akali&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                <ui:VisualElement name="top" class="FotoAkali" />
                 <ui:VisualElement name="mid" style="height: 170px;">
                     <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />
                 </ui:VisualElement>

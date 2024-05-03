@@ -9,7 +9,9 @@ public class lab5 : MonoBehaviour
 
     TextField input_nombre;
     TextField input_apellido;
-    Image input_imagen;
+    VisualElement input_imagen1;
+    VisualElement input_imagen2;
+    VisualElement input_imagen3;
 
     private void OnEnable()
     {
@@ -20,12 +22,16 @@ public class lab5 : MonoBehaviour
         input_nombre = root.Q<TextField>("InputNombre");
         input_apellido = root.Q<TextField>("InputApellido");
 
-        input_imagen = root.Q<Image>("ashe");
+        input_imagen1 = root.Q<VisualElement>("ashe");
+        input_imagen2 = root.Q<VisualElement>("ahri");
+        input_imagen3 = root.Q<VisualElement>("aphelios");
 
         plantilla.RegisterCallback<ClickEvent>(SeleccionIndividuo);
         input_nombre.RegisterCallback<ChangeEvent<string>>(CambioNombre);
         input_apellido.RegisterCallback<ChangeEvent<string>>(CambioApellido);
-        input_imagen.RegisterCallback<ChangeEvent<Texture>>(CambioImagen); // Cambiamos el evento a MouseUpEvent
+        input_imagen1.RegisterCallback<ClickEvent>(CambioImagen); // Cambiamos el evento a MouseUpEvent
+        input_imagen2.RegisterCallback<ClickEvent>(CambioImagen); // Cambiamos el evento a MouseUpEvent
+        input_imagen3.RegisterCallback<ClickEvent>(CambioImagen); // Cambiamos el evento a MouseUpEvent
     }
 
     void SeleccionIndividuo(ClickEvent evt)
@@ -51,9 +57,29 @@ public class lab5 : MonoBehaviour
         apellidoLabel.text = evt.newValue;
     }
 
-    void CambioImagen(ChangeEvent<Texture> evt)
+    void CambioImagen(ClickEvent evt)
     {
-        Image topImage = plantilla.Q<Image>("top");
-        topImage.image = evt.newValue; // Establecemos la imagen de "top" como la de "ashe"
+        VisualElement auximg = evt.target as VisualElement;
+        Debug.Log(auximg.name);
+        VisualElement topImage = plantilla.Q<VisualElement>("top");
+        topImage.RemoveFromClassList("FotoAkali");
+        topImage.RemoveFromClassList("FotoAhri");
+        topImage.RemoveFromClassList("FotoAphelios");
+        topImage.RemoveFromClassList("FotoAshe");
+        
+        switch (auximg.name)
+        {
+            case "ashe":
+                topImage.AddToClassList("FotoAshe");
+                break;
+            case "ahri":
+                topImage.AddToClassList("FotoAhri");
+                break;
+            case "aphelios":
+                topImage.AddToClassList("FotoAphelios");
+                break;
+
+        }
+
     }
 }

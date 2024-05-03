@@ -1,0 +1,25 @@
+.FotoAphelios {
+    height: 154px;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-image: url('project://database/Assets/Images/Champs/aphelios.png?fileID=2800000&guid=a0b09f5ad6b5b9b4cac0eaf31fa27887&type=3#aphelios');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.FotoAkali {
+    background-image: url('project://database/Assets/Images/Champs/akali.png?fileID=2800000&guid=370371deabaf82c43afcdafd4e8a3d84&type=3#akali');
+    -unity-background-scale-mode: scale-to-fit;
+    height: 154px;
+}
+
+.FotoAhri {
+    background-image: url('project://database/Assets/Images/Champs/ahri.png?fileID=2800000&guid=2d4375f593618724e93fa6da6075123e&type=3#ahri');
+    -unity-background-scale-mode: scale-to-fit;
+    height: 154px;
+}
+
+.FotoAshe {
+    background-image: url('project://database/Assets/Images/Champs/ashe.png?fileID=2800000&guid=228c14f38a661ed4fb28c27a99f11619&type=3#ashe');
+    -unity-background-scale-mode: scale-to-fit;
+    height: 154px;
+}
