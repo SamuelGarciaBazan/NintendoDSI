@@ -4,12 +4,12 @@
     <ui:VisualElement name="Background" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Images/Background.png?fileID=2800000&amp;guid=2faef31dce6f1a84d9acf3807c09787d&amp;type=3#Background&apos;); flex-direction: row;">
         <ui:VisualElement name="Left" style="height: 100%; width: 25%; flex-direction: column; justify-content: flex-start; align-items: flex-end;">
             <ui:VisualElement name="Up" style="width: 100%; height: 20%;" />
-            <ui:VisualElement name="Center" style="width: 80%; height: 60%; background-color: rgba(14, 14, 14, 0.69);">
-                <ui:Instance template="Container1" name="Container1" style="height: 20%; width: 100%;" />
-                <ui:Instance template="Container1" name="Container1" style="height: 20%; width: 100%;" />
-                <ui:Instance template="Container1" name="Container1" style="height: 20%; width: 100%;" />
-                <ui:Instance template="Container1" name="Container1" style="height: 20%; width: 100%;" />
-                <ui:Instance template="Container1" name="Container1" style="height: 20%; width: 100%;" />
+            <ui:VisualElement name="Center" style="width: 80%; height: 60%; background-color: rgba(12, 12, 12, 0); justify-content: space-between;">
+                <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
+                <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
+                <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
+                <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
+                <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
             </ui:VisualElement>
             <ui:VisualElement name="Down" style="width: 100%; height: 25%; flex-direction: column-reverse; align-items: auto;">
                 <ui:VisualElement name="Chat" style="width: 98%; height: 10%; margin-bottom: 2%; background-color: rgba(12, 5, 5, 0.67);" />
@@ -38,7 +38,7 @@
                 <ui:VisualElement name="reyna" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Reyna_icon.png?fileID=2800000&amp;guid=746ad09f202296546b454086e7d40e6a&amp;type=3#Reyna_icon&apos;);" />
                 <ui:VisualElement name="sage" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Sage_icon.png?fileID=2800000&amp;guid=1f14a110ab7b4b44bb65308053f31391&amp;type=3#Sage_icon&apos;);" />
             </ui:VisualElement>
-            <ui:VisualElement name="Button" style="width: 30%; height: 8%; margin-bottom: 4%; background-color: rgba(0, 0, 0, 0.67);" />
+            <ui:VisualElement name="Button" class="Button" />
         </ui:VisualElement>
         <ui:VisualElement name="Right" style="height: 100%; width: 25%;">
             <ui:VisualElement name="Panel" style="background-color: rgba(255, 255, 255, 0); width: 100%; height: 50%; margin-top: 25%; flex-direction: row;">

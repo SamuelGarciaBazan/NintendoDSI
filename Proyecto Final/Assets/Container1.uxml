@@ -1,9 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/container1.uss?fileID=7433441132597879392&amp;guid=681d44ea5295f9543af1d004e18b062a&amp;type=3#container1" />
     <ui:VisualElement name="Container1" style="height: 100%; flex-direction: row; width: 100%;">
         <ui:VisualElement name="Icon" style="height: 100%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Astra_icon.png?fileID=2800000&amp;guid=aa7d6bedaf76b79439a660dd79e7cae1&amp;type=3#Astra_icon&apos;); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; flex-direction: column; width: 50%;" />
-        <ui:VisualElement name="TextContainer" style="width: 100%; justify-content: flex-start;">
-            <ui:Label text="Label" display-tooltip-when-elided="true" name="Name" />
-            <ui:Label text="Label" display-tooltip-when-elided="true" name="Agent" style="-unity-text-align: upper-left;" />
+        <ui:VisualElement name="TextContainer" style="width: 95%; justify-content: flex-start; margin-left: 5%; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-direction: column; align-items: stretch;">
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="Name" class="TextSize TextPlayer" />
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="Agent" class="TextSize" style="-unity-text-align: upper-left; color: rgb(43, 232, 250);" />
         </ui:VisualElement>
         <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Viper_icon.png?fileID=2800000&amp;guid=f006fc13d39e479499c15e295bf60002&amp;type=3#Viper_icon&apos;); width: 20%; height: 20%;" />
     </ui:VisualElement>
