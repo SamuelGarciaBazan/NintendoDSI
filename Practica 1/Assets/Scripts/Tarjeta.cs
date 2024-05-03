@@ -23,7 +23,7 @@ namespace Lab5b_namespace
             tarjetaRoot.userData = miIndividuo;
 
             tarjetaRoot.
-                Query(className: "tarjeta")
+                Query(className: "Tarjeta")
                 .Descendents<VisualElement>()
                 .ForEach(elem => elem.pickingMode = PickingMode.Ignore);
 

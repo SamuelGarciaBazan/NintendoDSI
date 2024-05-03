@@ -18,6 +18,12 @@ namespace Lab5c_namespace
         TextField input_nombre;
         TextField input_apellido;
 
+        VisualElement input_imagen1;
+        VisualElement input_imagen2;
+        VisualElement input_imagen3;
+
+        VisualElement topImage;
+
         private void OnEnable()
         {
             Debug.Log("OnEnable");
@@ -32,6 +38,7 @@ namespace Lab5c_namespace
             input_nombre = root.Q<TextField>("InputNombre");
             input_apellido = root.Q<TextField>("InputApellido");
 
+
             individuos = BaseDatos.getData();
 
             VisualElement panelDcha = root.Q("derecha");
@@ -39,6 +46,14 @@ namespace Lab5c_namespace
 
             input_nombre.RegisterCallback<ChangeEvent<string>>(CambioNombre);
             input_apellido.RegisterCallback<ChangeEvent<string>>(CambioApellido);
+
+            input_imagen1 = root.Q<VisualElement>("ashe");
+            input_imagen2 = root.Q<VisualElement>("ahri");
+            input_imagen3 = root.Q<VisualElement>("aphelios");
+
+            input_imagen1.RegisterCallback<ClickEvent>(CambioImagen); // Cambiamos el evento a MouseUpEvent
+            input_imagen2.RegisterCallback<ClickEvent>(CambioImagen); // Cambiamos el evento a MouseUpEvent
+            input_imagen3.RegisterCallback<ClickEvent>(CambioImagen); // Cambiamos el evento a MouseUpEvent
 
             InitizalizeUI();
         }
@@ -62,6 +77,7 @@ namespace Lab5c_namespace
             Debug.Log(selectIndividuo.Nombre);
             input_nombre.SetValueWithoutNotify(selectIndividuo.Nombre);
             input_apellido.SetValueWithoutNotify(selectIndividuo.Apellido);
+            topImage = tarjeta.Q<VisualElement>("top");
         }
 
         void InitizalizeUI()
@@ -70,6 +86,31 @@ namespace Lab5c_namespace
             Tarjeta tar2 = new Tarjeta(tarjeta2, individuos[1]);
             Tarjeta tar3 = new Tarjeta(tarjeta3, individuos[2]);
             Tarjeta tar4 = new Tarjeta(tarjeta4, individuos[3]);
+        }
+
+        void CambioImagen(ClickEvent evt)
+        {
+            VisualElement auximg = evt.target as VisualElement;
+            Debug.Log(auximg.name);
+            topImage.RemoveFromClassList("FotoAkali");
+            topImage.RemoveFromClassList("FotoAhri");
+            topImage.RemoveFromClassList("FotoAphelios");
+            topImage.RemoveFromClassList("FotoAshe");
+
+            switch (auximg.name)
+            {
+                case "ashe":
+                    topImage.AddToClassList("FotoAshe");
+                    break;
+                case "ahri":
+                    topImage.AddToClassList("FotoAhri");
+                    break;
+                case "aphelios":
+                    topImage.AddToClassList("FotoAphelios");
+                    break;
+
+            }
+
         }
     }
 }
