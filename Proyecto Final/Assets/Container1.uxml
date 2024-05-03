@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Container1" style="height: 100%; flex-direction: row; width: 100%;">
+        <ui:VisualElement name="Icon" style="height: 100%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Astra_icon.png?fileID=2800000&amp;guid=aa7d6bedaf76b79439a660dd79e7cae1&amp;type=3#Astra_icon&apos;); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; flex-direction: column; width: 50%;" />
+        <ui:VisualElement name="TextContainer" style="width: 100%; justify-content: flex-start;">
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="Name" />
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="Agent" style="-unity-text-align: upper-left;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Viper_icon.png?fileID=2800000&amp;guid=f006fc13d39e479499c15e295bf60002&amp;type=3#Viper_icon&apos;); width: 20%; height: 20%;" />
+    </ui:VisualElement>
+</ui:UXML>
