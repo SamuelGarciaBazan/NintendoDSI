@@ -38,7 +38,7 @@
                 <ui:VisualElement name="reyna" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Reyna_icon.png?fileID=2800000&amp;guid=746ad09f202296546b454086e7d40e6a&amp;type=3#Reyna_icon&apos;);" />
                 <ui:VisualElement name="sage" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Sage_icon.png?fileID=2800000&amp;guid=1f14a110ab7b4b44bb65308053f31391&amp;type=3#Sage_icon&apos;);" />
             </ui:VisualElement>
-            <ui:VisualElement name="Button" style="width: 30%; height: 8%; margin-bottom: 4%; background-color: rgba(0, 0, 0, 0.67);" />
+            <ui:VisualElement name="Button" class="Button" />
         </ui:VisualElement>
         <ui:VisualElement name="Right" style="height: 100%; width: 25%;">
             <ui:VisualElement name="Panel" style="background-color: rgba(255, 255, 255, 0); width: 100%; height: 50%; margin-top: 25%; flex-direction: row;">
