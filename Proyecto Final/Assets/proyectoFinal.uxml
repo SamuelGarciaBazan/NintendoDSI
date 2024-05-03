@@ -1,6 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:Template name="Container1" src="project://database/Assets/Container1.uxml?fileID=9197481963319205126&amp;guid=9214f1d695890cc48a027818022a4d19&amp;type=3#Container1" />
     <Style src="project://database/Assets/proyectoFinal.uss?fileID=7433441132597879392&amp;guid=044b3e3b3a38be644abea5c9ddc3132d&amp;type=3#proyectoFinal" />
+    <Style src="project://database/Assets/container1.uss?fileID=7433441132597879392&amp;guid=681d44ea5295f9543af1d004e18b062a&amp;type=3#container1" />
     <ui:VisualElement name="Background" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Images/Background.png?fileID=2800000&amp;guid=2faef31dce6f1a84d9acf3807c09787d&amp;type=3#Background&apos;); flex-direction: row;">
         <ui:VisualElement name="Left" style="height: 100%; width: 25%; flex-direction: column; justify-content: flex-start; align-items: flex-end;">
             <ui:VisualElement name="Up" style="width: 100%; height: 20%;" />
@@ -12,7 +13,9 @@
                 <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
             </ui:VisualElement>
             <ui:VisualElement name="Down" style="width: 100%; height: 25%; flex-direction: column-reverse; align-items: auto;">
-                <ui:VisualElement name="Chat" style="width: 98%; height: 10%; margin-bottom: 2%; background-color: rgba(12, 5, 5, 0.67);" />
+                <ui:VisualElement name="Chat" style="width: 98%; height: 10%; margin-bottom: 2%; background-color: rgba(12, 5, 5, 0.67); flex-direction: row; align-items: auto; justify-content: space-between;">
+                    <ui:Label text="Equipo:" display-tooltip-when-elided="true" name="Label" class="TextAgent" style="width: 20%; height: 100%; font-size: 20px; margin-bottom: 2%;" />
+                </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Center" style="height: 100%; width: 50%; flex-direction: column-reverse; align-items: center; padding-bottom: 2%; margin-bottom: 0; padding-top: 0; justify-content: flex-start;">
