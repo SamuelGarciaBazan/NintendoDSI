@@ -14,8 +14,35 @@
                 <ui:TextField picking-mode="Ignore" label="Apellido" name="InputApellido" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="derecha" style="width: 395px;">
-            <ui:VisualElement name="plantilla" style="height: 451px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;);">
+        <ui:VisualElement name="derecha" style="width: 395px; flex-direction: row; align-items: center; justify-content: space-around; flex-wrap: wrap;">
+            <ui:VisualElement name="Tarjeta1" style="height: 200px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;); scale: 1 1; justify-content: flex-start;">
+                <ui:VisualElement name="top" class="FotoAkali" />
+                <ui:VisualElement name="mid" style="height: 170px;">
+                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="bottom" style="justify-content: flex-start; flex-direction: column; align-items: stretch; height: 130px;">
+                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Apellido" style="font-size: 50px; -unity-text-align: middle-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Tarjeta2" style="height: 200px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;);">
+                <ui:VisualElement name="top" class="FotoAkali" />
+                <ui:VisualElement name="mid" style="height: 170px;">
+                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="bottom" style="justify-content: flex-start; flex-direction: column; align-items: stretch; height: 130px;">
+                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Apellido" style="font-size: 50px; -unity-text-align: middle-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Tarjeta3" style="height: 200px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;);">
+                <ui:VisualElement name="top" class="FotoAkali" />
+                <ui:VisualElement name="mid" style="height: 170px;">
+                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="bottom" style="justify-content: flex-start; flex-direction: column; align-items: stretch; height: 130px;">
+                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Apellido" style="font-size: 50px; -unity-text-align: middle-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Tarjeta4" style="height: 200px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;);">
                 <ui:VisualElement name="top" class="FotoAkali" />
                 <ui:VisualElement name="mid" style="height: 170px;">
                     <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />

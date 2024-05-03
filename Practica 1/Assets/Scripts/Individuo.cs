@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
+
 
 namespace Lab5b_namespace
 {
@@ -13,14 +12,12 @@ namespace Lab5b_namespace
         public string Nombre
         {
             get { return nombre; }
-
             set
             {
-                if (nombre != value)
+                if (value != nombre)
                 {
                     nombre = value;
                     Cambio?.Invoke();
-
                 }
             }
         }
@@ -29,19 +26,17 @@ namespace Lab5b_namespace
         public string Apellido
         {
             get { return apellido; }
-
             set
             {
-                if (apellido != value)
+                if (value != apellido)
                 {
                     apellido = value;
                     Cambio?.Invoke();
-
                 }
             }
         }
 
-        public Individuo(string nombre,string apellido)
+        public Individuo(string nombre, string apellido)
         {
             this.nombre = nombre;
             this.apellido = apellido;
