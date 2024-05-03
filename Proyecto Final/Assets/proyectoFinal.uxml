@@ -8,9 +8,14 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Center" style="height: 100%; width: 50%; flex-direction: column-reverse; align-items: center; padding-bottom: 2%; margin-bottom: 0; padding-top: 0; justify-content: flex-start;">
-            <ui:VisualElement name="Down" style="width: 90%; height: 30%; background-color: rgba(0, 0, 0, 0.67);" />
+            <ui:VisualElement name="Down" style="width: 80%; height: 30%; background-color: rgba(0, 0, 0, 0.67);" />
             <ui:VisualElement name="Button" style="width: 30%; height: 8%; margin-bottom: 4%; background-color: rgba(0, 0, 0, 0.67);" />
         </ui:VisualElement>
-        <ui:VisualElement name="Right" style="height: 100%; width: 25%;" />
+        <ui:VisualElement name="Right" style="height: 100%; width: 25%;">
+            <ui:VisualElement name="Panel" style="background-color: rgba(255, 255, 255, 0); width: 100%; height: 50%; margin-top: 25%; flex-direction: row;">
+                <ui:VisualElement name="Info" style="height: 100%; width: 90%; background-color: rgba(0, 0, 0, 0.67);" />
+                <ui:VisualElement name="Puntos" style="height: 100%; width: 10%; background-color: rgba(0, 0, 0, 0.89);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
