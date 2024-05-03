@@ -23,3 +23,10 @@
     -unity-background-scale-mode: scale-to-fit;
     height: 154px;
 }
+
+.Tarjeta {
+    height: 200px;
+    background-image: url('project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&guid=43a05c22e6fbbe04faf1e2c14b144d51&type=3#Blue Fondo');
+    scale: 1 1;
+    justify-content: flex-start;
+}
