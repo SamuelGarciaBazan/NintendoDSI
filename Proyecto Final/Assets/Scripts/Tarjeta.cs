@@ -34,8 +34,8 @@ namespace Lab5b_namespace
 
         void UpdateUI()
         {
-            nombreLabel.text = miIndividuo.Nombre;
-            apellidoLabel.text = miIndividuo.Apellido;
+            nombreLabel.text = miIndividuo.Rol1;
+            apellidoLabel.text = miIndividuo.Nombre;
         }
     }
 }

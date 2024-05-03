@@ -45,7 +45,23 @@
         </ui:VisualElement>
         <ui:VisualElement name="Right" style="height: 100%; width: 25%;">
             <ui:VisualElement name="Panel" style="background-color: rgba(255, 255, 255, 0); width: 100%; height: 50%; margin-top: 25%; flex-direction: row;">
-                <ui:VisualElement name="Info" style="height: 100%; width: 90%; background-color: rgba(0, 0, 0, 0.67);" />
+                <ui:VisualElement name="Info" style="height: 100%; width: 90%; background-color: rgba(0, 0, 0, 0.13); -unity-text-outline-color: rgba(0, 0, 0, 0);">
+                    <ui:VisualElement name="Rol" style="height: 10%;">
+                        <ui:Label text="CENTINELA" display-tooltip-when-elided="true" style="-unity-text-align: upper-left; white-space: normal; letter-spacing: 10px; color: rgba(236, 236, 236, 255);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Nombre" style="height: 30%; -unity-text-align: upper-left;">
+                        <ui:Label text="DEADLOCK" display-tooltip-when-elided="true" style="white-space: normal; font-size: 30px; -unity-font-style: bold; -unity-text-align: middle-left; -unity-background-image-tint-color: rgba(206, 217, 101, 255); color: rgba(227, 233, 157, 255);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="DescripcionPersonaje" style="height: 30%;">
+                        <ui:Label text="Deadlock, la agente noruega, despliega un surtido de avanzados nanocables para defender el campo de batalla de cualquier asalto, por letal que sea. Nadie escapa a su atenta mirada ni sobrevive a su implacable ferocidad." display-tooltip-when-elided="true" style="white-space: normal; font-size: 10px; color: rgba(252, 255, 179, 255);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Rol2" style="height: 30%; -unity-text-outline-color: rgb(236, 236, 236);">
+                        <ui:Label text="CENTINELA" display-tooltip-when-elided="true" style="white-space: normal; font-size: 10px;" />
+                        <ui:VisualElement name="DescripcionRol" style="height: 30%;">
+                            <ui:Label text="Los centinelas son expertos en defensa que se centran en bloquear áreas y vigilar los flancos tanto durante las rondas de ataque como en las de defensa." display-tooltip-when-elided="true" style="white-space: normal; font-size: 10px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
                 <ui:VisualElement name="Puntos" style="height: 100%; width: 10%; background-color: rgba(0, 0, 0, 0.89);" />
             </ui:VisualElement>
         </ui:VisualElement>

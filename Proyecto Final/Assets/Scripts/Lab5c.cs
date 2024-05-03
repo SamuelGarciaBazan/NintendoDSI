@@ -60,12 +60,12 @@ namespace Lab5c_namespace
 
         void CambioNombre(ChangeEvent<string> evt)
         {
-            selectIndividuo.Nombre = evt.newValue;
+            selectIndividuo.Rol1 = evt.newValue;
         }
 
         void CambioApellido(ChangeEvent<string> evt)
         {
-            selectIndividuo.Apellido = evt.newValue;
+            selectIndividuo.Nombre = evt.newValue;
         }
 
         void seleccionTarjeta(ClickEvent e)
@@ -74,9 +74,9 @@ namespace Lab5c_namespace
             VisualElement tarjeta = e.target as VisualElement;
             selectIndividuo = tarjeta.userData as Individuo;
 
-            Debug.Log(selectIndividuo.Nombre);
-            input_nombre.SetValueWithoutNotify(selectIndividuo.Nombre);
-            input_apellido.SetValueWithoutNotify(selectIndividuo.Apellido);
+            Debug.Log(selectIndividuo.Rol1);
+            input_nombre.SetValueWithoutNotify(selectIndividuo.Rol1);
+            input_apellido.SetValueWithoutNotify(selectIndividuo.Nombre);
             topImage = tarjeta.Q<VisualElement>("top");
         }
 
