@@ -1,0 +1,25 @@
+.Icon {
+    width: 10%;
+    height: 25%;
+    border-left-color: rgba(255, 255, 255, 255);
+    border-right-color: rgba(255, 255, 255, 255);
+    border-top-color: rgba(255, 255, 255, 255);
+    border-bottom-color: rgba(255, 255, 255, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.Icon:hover {
+    width: 10%;
+    height: 25%;
+    border-left-color: rgb(255, 242, 162);
+    border-right-color: rgb(255, 242, 162);
+    border-top-color: rgb(255, 242, 162);
+    border-bottom-color: rgb(255, 242, 162);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+}

@@ -1,4 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/proyectoFinal.uss?fileID=7433441132597879392&amp;guid=044b3e3b3a38be644abea5c9ddc3132d&amp;type=3#proyectoFinal" />
     <ui:VisualElement name="Background" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Images/Background.png?fileID=2800000&amp;guid=2faef31dce6f1a84d9acf3807c09787d&amp;type=3#Background&apos;); flex-direction: row;">
         <ui:VisualElement name="Left" style="height: 100%; width: 25%; flex-direction: column; justify-content: flex-start; align-items: flex-end;">
             <ui:VisualElement name="Up" style="width: 100%; height: 20%;" />
@@ -8,7 +9,9 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Center" style="height: 100%; width: 50%; flex-direction: column-reverse; align-items: center; padding-bottom: 2%; margin-bottom: 0; padding-top: 0; justify-content: flex-start;">
-            <ui:VisualElement name="Down" style="width: 80%; height: 30%; background-color: rgba(0, 0, 0, 0.67);" />
+            <ui:VisualElement name="Down" style="width: 80%; height: 30%; background-color: rgba(0, 0, 0, 0.67); flex-direction: row; flex-wrap: wrap;">
+                <ui:VisualElement name="Icon1" class="Icon" />
+            </ui:VisualElement>
             <ui:VisualElement name="Button" style="width: 30%; height: 8%; margin-bottom: 4%; background-color: rgba(0, 0, 0, 0.67);" />
         </ui:VisualElement>
         <ui:VisualElement name="Right" style="height: 100%; width: 25%;">
