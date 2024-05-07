@@ -7,13 +7,15 @@ namespace Lab5c_namespace
 {
     public class Lab5c : MonoBehaviour
     {
+        VisualElement info;
+
         List<Individuo> individuos;
         Individuo selectIndividuo;
 
-        VisualElement tarjeta1;
+        //VisualElement tarjeta1;
 
-        TextField input_nombre;
-        TextField input_apellido;
+        //TextField input_nombre;
+        //TextField input_apellido;
 
         #region InputImagenes
         VisualElement input_imagen1;
@@ -51,6 +53,7 @@ namespace Lab5c_namespace
             Debug.Log("OnEnable");
 
             VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+            info = root.Q("Info");
 
             topImage = root.Q<VisualElement>("IconPro");
 
@@ -65,6 +68,12 @@ namespace Lab5c_namespace
 
             // VisualElement panelDcha = root.Q("derecha");
             // panelDcha.RegisterCallback<ClickEvent>(seleccionTarjeta);
+
+            //rol1.RegisterCallback<ChangeEvent<string>>(CambioRol1);
+            //nombre.RegisterCallback<ChangeEvent<string>>(CambioNombre);
+            //descripcionPersonaje.RegisterCallback<ChangeEvent<string>>(CambioDescripcionPersonaje);
+            //rol2.RegisterCallback<ChangeEvent<string>>(CambioRol2);
+            //descripcionRol.RegisterCallback<ChangeEvent<string>>(CambioDescripcionRol);
 
             #region InputImagenes
             input_imagen1 = root.Q<VisualElement>("astra");
@@ -115,7 +124,39 @@ namespace Lab5c_namespace
 
         void InitizalizeUI()
         {
-            //Tarjeta tar1 = new Tarjeta(tarjeta1, individuos[0]);
+            Debug.Log("InitizalizeUI");
+            selectIndividuo = individuos[0];
+            Tarjeta informacion = new Tarjeta(info, selectIndividuo);
+        }
+
+        void CambioRol1(ChangeEvent<string> evt)
+        {
+            Label Rol1 = info.Q<Label>("Rol1");
+            Rol1.text = evt.newValue;
+        }
+
+        void CambioNombre(ChangeEvent<string> evt)
+        {
+            Label Nombre = info.Q<Label>("Nombre");
+            Nombre.text = evt.newValue;
+        }
+
+        void CambioDescripcionPersonaje(ChangeEvent<string> evt)
+        {
+            Label DescripcionPersonaje = info.Q<Label>("DescripcionPersonaje");
+            DescripcionPersonaje.text = evt.newValue;
+        }
+
+        void CambioRol2(ChangeEvent<string> evt)
+        {
+            Label Rol2 = info.Q<Label>("Rol2");
+            Rol2.text = evt.newValue;
+        }
+
+        void CambioDescripcionRol(ChangeEvent<string> evt)
+        {
+            Label DescripcionRol = info.Q<Label>("DescripcionRol");
+            DescripcionRol.text = evt.newValue;
         }
 
         void CambioImagen(ClickEvent evt)
@@ -147,67 +188,96 @@ namespace Lab5c_namespace
             {
                 case "astra":
                     topImage.AddToClassList("astra");
+                    CambioInfo(0);
                     break;
                 case "breach":
                     topImage.AddToClassList("breach");
+                    CambioInfo(1);
                     break;
                 case "brimstome":
                     topImage.AddToClassList("brimstome");
+                    CambioInfo(2);
                     break;
                 case "chamber":
                     topImage.AddToClassList("chamber");
+                    CambioInfo(3);
                     break;
                 case "clove":
                     topImage.AddToClassList("clove");
+                    CambioInfo(4);
                     break;
                 case "cypher":
                     topImage.AddToClassList("cypher");
+                    CambioInfo(5);
                     break;
                 case "deadlock":
                     topImage.AddToClassList("deadlock");
+                    CambioInfo(6);
                     break;
                 case "fade":
                     topImage.AddToClassList("fade");
+                    CambioInfo(7);
                     break;
                 case "gekko":
                     topImage.AddToClassList("gekko");
+                    CambioInfo(8);
                     break;
                 case "harbor":
                     topImage.AddToClassList("harbor");
+                    CambioInfo(9);
                     break;
                 case "iso":
                     topImage.AddToClassList("iso");
+                    CambioInfo(10);
                     break;
                 case "jett":
                     topImage.AddToClassList("jett");
+                    CambioInfo(11);
                     break;
                 case "kayo":
                     topImage.AddToClassList("kayo");
+                    CambioInfo(12);
                     break;
                 case "killjoy":
                     topImage.AddToClassList("killjoy");
+                    CambioInfo(13);
                     break;
                 case "neon":
                     topImage.AddToClassList("neon");
+                    CambioInfo(14);
                     break;
                 case "omen":
                     topImage.AddToClassList("omen");
+                    CambioInfo(15);
                     break;
                 case "phoenix":
                     topImage.AddToClassList("phoenix");
+                    CambioInfo(16);
                     break;
                 case "raze":
                     topImage.AddToClassList("raze");
+                    CambioInfo(17);
                     break;
                 case "reyna":
                     topImage.AddToClassList("reyna");
+                    CambioInfo(18);
                     break;
                 case "sage":
                     topImage.AddToClassList("sage");
+                    CambioInfo(19);
                     break;
 
             }
 
+        }
+
+        void CambioInfo(int i)
+        {
+            selectIndividuo.Rol1 = individuos[i].Rol1;
+            selectIndividuo.Nombre = individuos[i].Nombre;
+            selectIndividuo.DescripcionPersonaje = individuos[i].DescripcionPersonaje;
+            selectIndividuo.Rol2 = individuos[i].Rol2;
+            selectIndividuo.DescripcionRol = individuos[i].DescripcionRol;
         }
     }
 }
