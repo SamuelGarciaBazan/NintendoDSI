@@ -61,11 +61,8 @@
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:VisualElement name="Down" style="width: 100%; height: 25%; flex-direction: column-reverse; align-items: auto;">
-                <ui:VisualElement name="Chat" style="width: 98%; height: 10%; margin-bottom: 2%; background-color: rgba(12, 5, 5, 0.67); flex-direction: row; align-items: auto; justify-content: space-between;">
-                    <ui:Label text="Equipo:" display-tooltip-when-elided="true" name="Label" class="TextAgent" style="width: 20%; height: 100%; font-size: 20px; margin-bottom: 2%;" />
-                </ui:VisualElement>
-                <ui:TextField picking-mode="Ignore" value="filler text" text="filler text" multiline="true" style="width: 227px; overflow: hidden; opacity: 0.5; -unity-background-image-tint-color: rgba(255, 255, 255, 0);" />
+            <ui:VisualElement name="Down" style="width: 100%; height: 25%; flex-direction: row; align-items: auto;">
+                <ui:TextField picking-mode="Ignore" value="filler text" text="filler text" multiline="true" style="width: 446px; overflow: hidden; opacity: 0.5; -unity-background-image-tint-color: rgba(255, 255, 255, 0);" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Center" style="height: 100%; width: 50%; flex-direction: column-reverse; align-items: center; padding-bottom: 2%; margin-bottom: 0; padding-top: 0; justify-content: flex-start;">
@@ -119,7 +116,7 @@
                         </ui:VisualElement>
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="Puntos" style="height: 100%; width: 10%; background-color: rgba(0, 0, 0, 0.89);" />
+                <ui:VisualElement name="Puntos" style="height: 100%; width: 10%; background-color: rgba(0, 0, 0, 0);" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

@@ -141,3 +141,14 @@
     height: 50%;
     background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Sage_icon.png?fileID=2800000&guid=1f14a110ab7b4b44bb65308053f31391&type=3#Sage_icon');
 }
+
+.Button:hover {
+    border-left-color: rgba(255, 255, 255, 255);
+    border-right-color: rgba(255, 255, 255, 255);
+    border-top-color: rgba(255, 255, 255, 255);
+    border-bottom-color: rgba(255, 255, 255, 255);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+}
