@@ -15,6 +15,7 @@ namespace Lab5c_namespace
         TextField input_nombre;
         TextField input_apellido;
 
+        #region InputImagenes
         VisualElement input_imagen1;
         VisualElement input_imagen2;
         VisualElement input_imagen3;
@@ -35,6 +36,13 @@ namespace Lab5c_namespace
         VisualElement input_imagen18;
         VisualElement input_imagen19;
         VisualElement input_imagen20;
+        #endregion
+
+        Label rol1;
+        Label nombre;
+        Label descripcionPersonaje;
+        Label rol2;
+        Label descripcionRol;
 
         VisualElement topImage;
 
@@ -45,15 +53,20 @@ namespace Lab5c_namespace
             VisualElement root = GetComponent<UIDocument>().rootVisualElement;
 
             topImage = root.Q<VisualElement>("IconPro");
-            //input_nombre = root.Q<TextField>("InputNombre");
+
+            rol1 = root.Q<Label>("Rol1");
+            nombre = root.Q<Label>("Nombre");
+            descripcionPersonaje = root.Q<Label>("DescripcionPersonaje");
+            rol2 = root.Q<Label>("Rol2");
+            descripcionRol = root.Q<Label>("DescripcionRol");
 
 
-            //individuos = BaseDatos.getData();
+            individuos = BaseDatos.getData();
 
             // VisualElement panelDcha = root.Q("derecha");
             // panelDcha.RegisterCallback<ClickEvent>(seleccionTarjeta);
 
-
+            #region InputImagenes
             input_imagen1 = root.Q<VisualElement>("astra");
             input_imagen2 = root.Q<VisualElement>("breach");
             input_imagen3 = root.Q<VisualElement>("brimstome");
@@ -95,6 +108,7 @@ namespace Lab5c_namespace
             input_imagen18.RegisterCallback<ClickEvent>(CambioImagen); // Cambiamos el evento a MouseUpEvent
             input_imagen19.RegisterCallback<ClickEvent>(CambioImagen); // Cambiamos el evento a MouseUpEvent
             input_imagen20.RegisterCallback<ClickEvent>(CambioImagen); // Cambiamos el evento a MouseUpEvent
+            #endregion
 
             InitizalizeUI();
         }
