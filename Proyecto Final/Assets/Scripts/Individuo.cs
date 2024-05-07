@@ -49,6 +49,20 @@ namespace Lab5b_namespace
                 }
             }
         }
+        
+        private string descripcionPersonaje;
+        public string DescripcionPersonaje
+        {
+            get { return descripcionPersonaje; }
+            set
+            {
+                if (value != descripcionPersonaje)
+                {
+                    descripcionPersonaje = value;
+                    Cambio?.Invoke();
+                }
+            }
+        }
 
         private string rol2;
         public string Rol2
@@ -78,10 +92,11 @@ namespace Lab5b_namespace
             }
         }
 
-        public Individuo(string rol1, string nombre, string rol2, string descripcionRol)
+        public Individuo(string rol1, string nombre, string descripcionPersonaje, string rol2, string descripcionRol)
         {
             this.rol1 = rol1;
             this.nombre = nombre;
+            this.descripcionPersonaje = descripcionPersonaje;
             this.rol2 = rol2;
             this.descripcionRol = descripcionRol;
         }

@@ -16,6 +16,7 @@
                 <ui:VisualElement name="Chat" style="width: 98%; height: 10%; margin-bottom: 2%; background-color: rgba(12, 5, 5, 0.67); flex-direction: row; align-items: auto; justify-content: space-between;">
                     <ui:Label text="Equipo:" display-tooltip-when-elided="true" name="Label" class="TextAgent" style="width: 20%; height: 100%; font-size: 20px; margin-bottom: 2%;" />
                 </ui:VisualElement>
+                <ui:TextField picking-mode="Ignore" value="filler text" text="filler text" multiline="true" style="width: 227px; overflow: hidden; opacity: 0.5; -unity-background-image-tint-color: rgba(255, 255, 255, 0);" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Center" style="height: 100%; width: 50%; flex-direction: column-reverse; align-items: center; padding-bottom: 2%; margin-bottom: 0; padding-top: 0; justify-content: flex-start;">
@@ -47,6 +48,7 @@
             <ui:VisualElement name="Panel" style="background-color: rgba(255, 255, 255, 0); width: 100%; height: 50%; margin-top: 25%; flex-direction: row;">
                 <ui:VisualElement name="Info" style="height: 100%; width: 90%; background-color: rgba(0, 0, 0, 0.13); -unity-text-outline-color: rgba(0, 0, 0, 0);">
                     <ui:VisualElement name="Rol" style="height: 10%;">
+<<<<<<< Updated upstream
                         <ui:Label text="C E N T I N E L A" display-tooltip-when-elided="true" style="-unity-text-align: upper-left; white-space: normal; letter-spacing: 10px; color: rgb(236, 236, 236);" />
                     </ui:VisualElement>
                     <ui:VisualElement name="Nombre" style="height: 30%; -unity-text-align: upper-left;">
@@ -54,6 +56,15 @@
                     </ui:VisualElement>
                     <ui:VisualElement name="DescripcionPersonaje" style="height: 30%;">
                         <ui:Label text="Deadlock, la agente noruega, despliega un surtido de avanzados nanocables para defender el campo de batalla de cualquier asalto, por letal que sea. Nadie escapa a su atenta mirada ni sobrevive a su implacable ferocidad." display-tooltip-when-elided="true" style="white-space: normal; font-size: 14px; color: rgb(252, 255, 179);" />
+=======
+                        <ui:Label text="CENTINELA" display-tooltip-when-elided="true" style="-unity-text-align: upper-left; white-space: normal; letter-spacing: 10px; color: rgb(236, 236, 236);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Nombre" style="height: 30%; -unity-text-align: upper-left;">
+                        <ui:Label text="DEADLOCK" display-tooltip-when-elided="true" style="white-space: normal; font-size: 30px; -unity-font-style: bold; -unity-text-align: middle-left; -unity-background-image-tint-color: rgb(206, 217, 101); color: rgb(227, 233, 157);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="DescripcionPersonaje" style="height: 30%;">
+                        <ui:Label text="Deadlock, la agente noruega, despliega un surtido de avanzados nanocables para defender el campo de batalla de cualquier asalto, por letal que sea. Nadie escapa a su atenta mirada ni sobrevive a su implacable ferocidad." display-tooltip-when-elided="true" style="white-space: normal; font-size: 10px; color: rgb(252, 255, 179);" />
+>>>>>>> Stashed changes
                     </ui:VisualElement>
                     <ui:VisualElement name="Rol2" style="height: 30%; -unity-text-outline-color: rgb(236, 236, 236);">
                         <ui:Label text="CENTINELA" display-tooltip-when-elided="true" style="white-space: normal; font-size: 18px; -unity-font-style: bold; color: rgb(255, 255, 255); scale: 1 1;" />
