@@ -1,16 +1,65 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Template name="Container1" src="project://database/Assets/Container1.uxml?fileID=9197481963319205126&amp;guid=9214f1d695890cc48a027818022a4d19&amp;type=3#Container1" />
     <Style src="project://database/Assets/proyectoFinal.uss?fileID=7433441132597879392&amp;guid=044b3e3b3a38be644abea5c9ddc3132d&amp;type=3#proyectoFinal" />
     <Style src="project://database/Assets/container1.uss?fileID=7433441132597879392&amp;guid=681d44ea5295f9543af1d004e18b062a&amp;type=3#container1" />
     <ui:VisualElement name="Background" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Images/Background.png?fileID=2800000&amp;guid=2faef31dce6f1a84d9acf3807c09787d&amp;type=3#Background&apos;); flex-direction: row;">
         <ui:VisualElement name="Left" style="height: 100%; width: 25%; flex-direction: column; justify-content: flex-start; align-items: flex-end;">
             <ui:VisualElement name="Up" style="width: 100%; height: 20%;" />
             <ui:VisualElement name="Center" style="width: 80%; height: 60%; background-color: rgba(12, 12, 12, 0); justify-content: space-between;">
-                <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
-                <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
-                <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
-                <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
-                <ui:Instance template="Container1" name="Container1" style="height: 18%; width: 100%;" />
+                <ui:VisualElement name="Container1" style="height: 18%; width: 100%;">
+                    <Style src="project://database/Assets/container1.uss?fileID=7433441132597879392&amp;guid=681d44ea5295f9543af1d004e18b062a&amp;type=3#container1" />
+                    <ui:VisualElement name="Container1" style="height: 100%; flex-direction: row; width: 100%;">
+                        <ui:VisualElement name="IconPro" class="Icon" style="height: 100%; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; flex-direction: column; width: 50%;" />
+                        <ui:VisualElement name="TextContainer" style="width: 95%; justify-content: flex-start; margin-left: 5%; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-direction: column; align-items: stretch;">
+                            <ui:Label text="Me" display-tooltip-when-elided="true" name="Name" class="TextSize TextPlayer" />
+                            <ui:Label text="Astra" display-tooltip-when-elided="true" name="Agent" class="TextSize" style="-unity-text-align: upper-left; color: rgb(43, 232, 250);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Images/icons8-microphone-50.png?fileID=2800000&amp;guid=d4ac93b7061244b4f85f7e2ce6458722&amp;type=3#icons8-microphone-50&apos;); width: 20%; height: 20%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Container1" style="height: 18%; width: 100%;">
+                    <Style src="project://database/Assets/container1.uss?fileID=7433441132597879392&amp;guid=681d44ea5295f9543af1d004e18b062a&amp;type=3#container1" />
+                    <ui:VisualElement name="Container1" style="height: 100%; flex-direction: row; width: 100%;">
+                        <ui:VisualElement name="Icon" style="height: 100%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Breach_icon.png?fileID=2800000&amp;guid=4608dcbd11d66124cabda3b462708b31&amp;type=3#Breach_icon&apos;); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; flex-direction: column; width: 50%;" />
+                        <ui:VisualElement name="TextContainer" style="width: 95%; justify-content: flex-start; margin-left: 5%; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-direction: column; align-items: stretch;">
+                            <ui:Label text="Player 1" display-tooltip-when-elided="true" name="Name" class="TextSize TextPlayer" />
+                            <ui:Label text="Breach" display-tooltip-when-elided="true" name="Agent" class="TextSize" style="-unity-text-align: upper-left; color: rgb(43, 232, 250);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Images/icons8-microphone-50.png?fileID=2800000&amp;guid=d4ac93b7061244b4f85f7e2ce6458722&amp;type=3#icons8-microphone-50&apos;); width: 20%; height: 20%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Container1" style="height: 18%; width: 100%;">
+                    <Style src="project://database/Assets/container1.uss?fileID=7433441132597879392&amp;guid=681d44ea5295f9543af1d004e18b062a&amp;type=3#container1" />
+                    <ui:VisualElement name="Container1" style="height: 100%; flex-direction: row; width: 100%;">
+                        <ui:VisualElement name="Icon" style="height: 100%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Clove_icon.png?fileID=2800000&amp;guid=126a40bba7c34104fb33e0bbc7850573&amp;type=3#Clove_icon&apos;); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; flex-direction: column; width: 50%;" />
+                        <ui:VisualElement name="TextContainer" style="width: 95%; justify-content: flex-start; margin-left: 5%; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-direction: column; align-items: stretch;">
+                            <ui:Label text="Player 2" display-tooltip-when-elided="true" name="Name" class="TextSize TextPlayer" />
+                            <ui:Label text="Clove" display-tooltip-when-elided="true" name="Agent" class="TextSize" style="-unity-text-align: upper-left; color: rgb(43, 232, 250);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Images/icons8-microphone-50.png?fileID=2800000&amp;guid=d4ac93b7061244b4f85f7e2ce6458722&amp;type=3#icons8-microphone-50&apos;); width: 20%; height: 20%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Container1" style="height: 18%; width: 100%;">
+                    <Style src="project://database/Assets/container1.uss?fileID=7433441132597879392&amp;guid=681d44ea5295f9543af1d004e18b062a&amp;type=3#container1" />
+                    <ui:VisualElement name="Container1" style="height: 100%; flex-direction: row; width: 100%;">
+                        <ui:VisualElement name="Icon" style="height: 100%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Fade_icon.png?fileID=2800000&amp;guid=536157a7fde22b64c9ee01217a34c148&amp;type=3#Fade_icon&apos;); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; flex-direction: column; width: 50%;" />
+                        <ui:VisualElement name="TextContainer" style="width: 95%; justify-content: flex-start; margin-left: 5%; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-direction: column; align-items: stretch;">
+                            <ui:Label text="Player 3" display-tooltip-when-elided="true" name="Name" class="TextSize TextPlayer" />
+                            <ui:Label text="Fade" display-tooltip-when-elided="true" name="Agent" class="TextSize" style="-unity-text-align: upper-left; color: rgb(43, 232, 250);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Images/icons8-microphone-50.png?fileID=2800000&amp;guid=d4ac93b7061244b4f85f7e2ce6458722&amp;type=3#icons8-microphone-50&apos;); width: 20%; height: 20%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Container1" style="height: 18%; width: 100%;">
+                    <Style src="project://database/Assets/container1.uss?fileID=7433441132597879392&amp;guid=681d44ea5295f9543af1d004e18b062a&amp;type=3#container1" />
+                    <ui:VisualElement name="Container1" style="height: 100%; flex-direction: row; width: 100%;">
+                        <ui:VisualElement name="Icon" style="height: 100%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Jett_icon.png?fileID=2800000&amp;guid=900b6d1cff6dbf44e98922b007304ec6&amp;type=3#Jett_icon&apos;); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; flex-direction: column; width: 50%;" />
+                        <ui:VisualElement name="TextContainer" style="width: 95%; justify-content: flex-start; margin-left: 5%; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-direction: column; align-items: stretch;">
+                            <ui:Label text="Player 4" display-tooltip-when-elided="true" name="Name" class="TextSize TextPlayer" />
+                            <ui:Label text="Jett" display-tooltip-when-elided="true" name="Agent" class="TextSize" style="-unity-text-align: upper-left; color: rgb(43, 232, 250);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Images/icons8-microphone-50.png?fileID=2800000&amp;guid=d4ac93b7061244b4f85f7e2ce6458722&amp;type=3#icons8-microphone-50&apos;); width: 20%; height: 20%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Down" style="width: 100%; height: 25%; flex-direction: column-reverse; align-items: auto;">
                 <ui:VisualElement name="Chat" style="width: 98%; height: 10%; margin-bottom: 2%; background-color: rgba(12, 5, 5, 0.67); flex-direction: row; align-items: auto; justify-content: space-between;">
@@ -21,26 +70,26 @@
         </ui:VisualElement>
         <ui:VisualElement name="Center" style="height: 100%; width: 50%; flex-direction: column-reverse; align-items: center; padding-bottom: 2%; margin-bottom: 0; padding-top: 0; justify-content: flex-start;">
             <ui:VisualElement name="Down" style="width: 90%; height: 15%; background-color: rgba(0, 0, 0, 0); flex-direction: row; flex-wrap: wrap;">
-                <ui:VisualElement name="astra" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Astra_icon.png?fileID=2800000&amp;guid=aa7d6bedaf76b79439a660dd79e7cae1&amp;type=3#Astra_icon&apos;);" />
-                <ui:VisualElement name="breach" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Breach_icon.png?fileID=2800000&amp;guid=4608dcbd11d66124cabda3b462708b31&amp;type=3#Breach_icon&apos;);" />
-                <ui:VisualElement name="brimstone" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Brimstone_icon.png?fileID=2800000&amp;guid=e508229622b246f4b9f7bac243bd61b3&amp;type=3#Brimstone_icon&apos;);" />
-                <ui:VisualElement name="chamber" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Chamber_icon.png?fileID=2800000&amp;guid=cde121f83bee87a41bbe644aa925f16c&amp;type=3#Chamber_icon&apos;);" />
-                <ui:VisualElement name="clove" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Clove_icon.png?fileID=2800000&amp;guid=126a40bba7c34104fb33e0bbc7850573&amp;type=3#Clove_icon&apos;);" />
-                <ui:VisualElement name="cypher" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Cypher_icon.png?fileID=2800000&amp;guid=86f585d03e27b9c4ea2758d4c4162a89&amp;type=3#Cypher_icon&apos;);" />
-                <ui:VisualElement name="deadlock" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Deadlock_icon.png?fileID=2800000&amp;guid=97342d3cc3736a7489fc01c1c1e804f1&amp;type=3#Deadlock_icon&apos;);" />
-                <ui:VisualElement name="fade" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Fade_icon.png?fileID=2800000&amp;guid=536157a7fde22b64c9ee01217a34c148&amp;type=3#Fade_icon&apos;);" />
-                <ui:VisualElement name="gekko" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Gekko_icon.png?fileID=2800000&amp;guid=57a8056ab0658974d9af3396c09bfacd&amp;type=3#Gekko_icon&apos;);" />
-                <ui:VisualElement name="harbor" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Harbor_icon.png?fileID=2800000&amp;guid=1cecd25ff50e49940b7c47a59e473240&amp;type=3#Harbor_icon&apos;);" />
-                <ui:VisualElement name="iso" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Iso_icon.png?fileID=2800000&amp;guid=8bf8bf92304b6f54b989a0813bd82e8a&amp;type=3#Iso_icon&apos;);" />
-                <ui:VisualElement name="jett" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Jett_icon.png?fileID=2800000&amp;guid=900b6d1cff6dbf44e98922b007304ec6&amp;type=3#Jett_icon&apos;);" />
-                <ui:VisualElement name="kayo" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/KAYO_icon.png?fileID=2800000&amp;guid=4474affeac0f32f43a488e0e31f5004b&amp;type=3#KAYO_icon&apos;);" />
-                <ui:VisualElement name="killjoy" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Killjoy_icon.png?fileID=2800000&amp;guid=ee542a05beaa18048aeb529197030f81&amp;type=3#Killjoy_icon&apos;);" />
-                <ui:VisualElement name="neon" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Neon_icon.png?fileID=2800000&amp;guid=30fffc98f5c941e40825ff534605a797&amp;type=3#Neon_icon&apos;);" />
-                <ui:VisualElement name="omen" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Omen_icon.png?fileID=2800000&amp;guid=b1cbf265f6fca514185f9f8966286769&amp;type=3#Omen_icon&apos;);" />
-                <ui:VisualElement name="phoenix" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Phoenix_icon.png?fileID=2800000&amp;guid=71da5f15f9382bb4684171cebe5fe39a&amp;type=3#Phoenix_icon&apos;);" />
-                <ui:VisualElement name="raze" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Raze_icon.png?fileID=2800000&amp;guid=0eb9d2362be8afc419e69f72e779174e&amp;type=3#Raze_icon&apos;);" />
-                <ui:VisualElement name="reyna" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Reyna_icon.png?fileID=2800000&amp;guid=746ad09f202296546b454086e7d40e6a&amp;type=3#Reyna_icon&apos;);" />
-                <ui:VisualElement name="sage" class="Icon" style="height: 50%; background-image: url(&apos;project://database/Assets/Images/Imagenes%20Valorant/Sage_icon.png?fileID=2800000&amp;guid=1f14a110ab7b4b44bb65308053f31391&amp;type=3#Sage_icon&apos;);" />
+                <ui:VisualElement name="astra" class="Icon astra" />
+                <ui:VisualElement name="breach" class="Icon breach" />
+                <ui:VisualElement name="brimstome" class="Icon brimstome" />
+                <ui:VisualElement name="chamber" class="Icon chamber" />
+                <ui:VisualElement name="clove" class="Icon clove" />
+                <ui:VisualElement name="cypher" class="Icon cypher" />
+                <ui:VisualElement name="deadlock" class="Icon deadlock" />
+                <ui:VisualElement name="fade" class="Icon fade" />
+                <ui:VisualElement name="gekko" class="Icon gekko" />
+                <ui:VisualElement name="harbor" class="Icon harbor" />
+                <ui:VisualElement name="iso" class="Icon iso" />
+                <ui:VisualElement name="jett" class="Icon jett" />
+                <ui:VisualElement name="kayo" class="Icon kayo" />
+                <ui:VisualElement name="killjoy" class="Icon killjoy" />
+                <ui:VisualElement name="neon" class="Icon neon" />
+                <ui:VisualElement name="omen" class="Icon omen" />
+                <ui:VisualElement name="phoenix" class="Icon phoenix" />
+                <ui:VisualElement name="raze" class="Icon raze" />
+                <ui:VisualElement name="reyna" class="Icon reyna" />
+                <ui:VisualElement name="sage" class="Icon sage" />
             </ui:VisualElement>
             <ui:VisualElement name="Button" class="Button" />
         </ui:VisualElement>
@@ -48,7 +97,6 @@
             <ui:VisualElement name="Panel" style="background-color: rgba(255, 255, 255, 0); width: 100%; height: 50%; margin-top: 25%; flex-direction: row;">
                 <ui:VisualElement name="Info" style="height: 100%; width: 90%; background-color: rgba(0, 0, 0, 0.13); -unity-text-outline-color: rgba(0, 0, 0, 0);">
                     <ui:VisualElement name="Rol" style="height: 10%;">
-<<<<<<< Updated upstream
                         <ui:Label text="C E N T I N E L A" display-tooltip-when-elided="true" style="-unity-text-align: upper-left; white-space: normal; letter-spacing: 10px; color: rgb(236, 236, 236);" />
                     </ui:VisualElement>
                     <ui:VisualElement name="Nombre" style="height: 30%; -unity-text-align: upper-left;">
@@ -56,7 +104,6 @@
                     </ui:VisualElement>
                     <ui:VisualElement name="DescripcionPersonaje" style="height: 30%;">
                         <ui:Label text="Deadlock, la agente noruega, despliega un surtido de avanzados nanocables para defender el campo de batalla de cualquier asalto, por letal que sea. Nadie escapa a su atenta mirada ni sobrevive a su implacable ferocidad." display-tooltip-when-elided="true" style="white-space: normal; font-size: 14px; color: rgb(252, 255, 179);" />
-=======
                         <ui:Label text="CENTINELA" display-tooltip-when-elided="true" style="-unity-text-align: upper-left; white-space: normal; letter-spacing: 10px; color: rgb(236, 236, 236);" />
                     </ui:VisualElement>
                     <ui:VisualElement name="Nombre" style="height: 30%; -unity-text-align: upper-left;">
@@ -64,7 +111,6 @@
                     </ui:VisualElement>
                     <ui:VisualElement name="DescripcionPersonaje" style="height: 30%;">
                         <ui:Label text="Deadlock, la agente noruega, despliega un surtido de avanzados nanocables para defender el campo de batalla de cualquier asalto, por letal que sea. Nadie escapa a su atenta mirada ni sobrevive a su implacable ferocidad." display-tooltip-when-elided="true" style="white-space: normal; font-size: 10px; color: rgb(252, 255, 179);" />
->>>>>>> Stashed changes
                     </ui:VisualElement>
                     <ui:VisualElement name="Rol2" style="height: 30%; -unity-text-outline-color: rgb(236, 236, 236);">
                         <ui:Label text="CENTINELA" display-tooltip-when-elided="true" style="white-space: normal; font-size: 18px; -unity-font-style: bold; color: rgb(255, 255, 255); scale: 1 1;" />

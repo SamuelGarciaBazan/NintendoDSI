@@ -1,6 +1,6 @@
 .Icon {
     width: 10%;
-    height: 25%;
+    height: 50%;
     border-left-color: rgb(255, 255, 255);
     border-right-color: rgb(255, 255, 255);
     border-top-color: rgb(255, 255, 255);
@@ -14,7 +14,7 @@
 
 .Icon:hover {
     width: 10%;
-    height: 25%;
+    height: 50%;
     border-left-color: rgb(255, 242, 162);
     border-right-color: rgb(255, 242, 162);
     border-top-color: rgb(255, 242, 162);
@@ -32,12 +32,112 @@
     margin-bottom: 4%;
     background-color: rgba(0, 0, 0, 0.67);
     background-image: url('project://database/Assets/Images/boton%20confirmar.png?fileID=2800000&guid=3d798855cbcca13499b80845bc45d1df&type=3#boton confirmar');
-    border-left-color: rgba(255, 255, 255, 255);
-    border-right-color: rgba(255, 255, 255, 255);
-    border-top-color: rgba(255, 255, 255, 255);
-    border-bottom-color: rgba(255, 255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
     border-left-width: 2px;
     border-right-width: 2px;
     border-top-width: 2px;
     border-bottom-width: 2px;
+}
+
+.astra {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Astra_icon.png?fileID=2800000&guid=aa7d6bedaf76b79439a660dd79e7cae1&type=3#Astra_icon');
+}
+
+.breach {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Breach_icon.png?fileID=2800000&guid=4608dcbd11d66124cabda3b462708b31&type=3#Breach_icon');
+}
+
+.brimstome {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Brimstone_icon.png?fileID=2800000&guid=e508229622b246f4b9f7bac243bd61b3&type=3#Brimstone_icon');
+}
+
+.chamber {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Chamber_icon.png?fileID=2800000&guid=cde121f83bee87a41bbe644aa925f16c&type=3#Chamber_icon');
+}
+
+.clove {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Clove_icon.png?fileID=2800000&guid=126a40bba7c34104fb33e0bbc7850573&type=3#Clove_icon');
+}
+
+.cypher {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Cypher_icon.png?fileID=2800000&guid=86f585d03e27b9c4ea2758d4c4162a89&type=3#Cypher_icon');
+}
+
+.deadlock {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Deadlock_icon.png?fileID=2800000&guid=97342d3cc3736a7489fc01c1c1e804f1&type=3#Deadlock_icon');
+}
+
+.fade {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Fade_icon.png?fileID=2800000&guid=536157a7fde22b64c9ee01217a34c148&type=3#Fade_icon');
+}
+
+.gekko {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Gekko_icon.png?fileID=2800000&guid=57a8056ab0658974d9af3396c09bfacd&type=3#Gekko_icon');
+}
+
+.harbor {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Harbor_icon.png?fileID=2800000&guid=1cecd25ff50e49940b7c47a59e473240&type=3#Harbor_icon');
+}
+
+.iso {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Iso_icon.png?fileID=2800000&guid=8bf8bf92304b6f54b989a0813bd82e8a&type=3#Iso_icon');
+}
+
+.jett {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Jett_icon.png?fileID=2800000&guid=900b6d1cff6dbf44e98922b007304ec6&type=3#Jett_icon');
+}
+
+.kayo {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/KAYO_icon.png?fileID=2800000&guid=4474affeac0f32f43a488e0e31f5004b&type=3#KAYO_icon');
+}
+
+.killjoy {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Killjoy_icon.png?fileID=2800000&guid=ee542a05beaa18048aeb529197030f81&type=3#Killjoy_icon');
+}
+
+.neon {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Neon_icon.png?fileID=2800000&guid=30fffc98f5c941e40825ff534605a797&type=3#Neon_icon');
+}
+
+.omen {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Omen_icon.png?fileID=2800000&guid=b1cbf265f6fca514185f9f8966286769&type=3#Omen_icon');
+}
+
+.phoenix {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Phoenix_icon.png?fileID=2800000&guid=71da5f15f9382bb4684171cebe5fe39a&type=3#Phoenix_icon');
+}
+
+.raze {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Raze_icon.png?fileID=2800000&guid=0eb9d2362be8afc419e69f72e779174e&type=3#Raze_icon');
+}
+
+.reyna {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Reyna_icon.png?fileID=2800000&guid=746ad09f202296546b454086e7d40e6a&type=3#Reyna_icon');
+}
+
+.sage {
+    height: 50%;
+    background-image: url('project://database/Assets/Images/Imagenes%20Valorant/Sage_icon.png?fileID=2800000&guid=1f14a110ab7b4b44bb65308053f31391&type=3#Sage_icon');
 }
