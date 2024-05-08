@@ -1,7 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="TarjetaP6" src="project://database/Assets/Resources/TarjetaP6.uxml?fileID=9197481963319205126&amp;guid=dde98979a691a9c4994837e7504347ea&amp;type=3#TarjetaP6" />
     <Style src="project://database/Assets/lab5.uss?fileID=7433441132597879392&amp;guid=5735db23dfa4bc94b9b3d5dc13d5b59d&amp;type=3#lab5" />
     <ui:VisualElement name="contenedor" style="flex-direction: row; justify-content: flex-start; align-items: stretch;">
-        <ui:VisualElement name="izquierda" style="width: 310px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;); background-color: rgb(197, 68, 68); -unity-background-image-tint-color: rgb(152, 84, 84); align-items: stretch; justify-content: space-between;">
+        <ui:VisualElement name="izquierda" style="width: 310px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;); background-color: rgb(197, 68, 68); -unity-background-image-tint-color: rgb(152, 84, 84); align-items: stretch; justify-content: space-between; height: 300px;">
             <ui:VisualElement name="header" style="flex-direction: row;">
                 <ui:VisualElement name="ashe" style="background-image: url(&apos;project://database/Assets/Images/Champs/ashe.png?fileID=2800000&amp;guid=228c14f38a661ed4fb28c27a99f11619&amp;type=3#ashe&apos;); width: 120px; height: 120px; flex-direction: row; align-items: center; justify-content: space-around; right: auto; position: relative;" />
                 <ui:VisualElement name="ahri" style="background-image: url(&apos;project://database/Assets/Images/Champs/ahri.png?fileID=2800000&amp;guid=2d4375f593618724e93fa6da6075123e&amp;type=3#ahri&apos;); width: 120px; height: 120px;" />
@@ -13,44 +14,13 @@
             <ui:VisualElement name="footer">
                 <ui:TextField picking-mode="Ignore" label="Apellido" name="InputApellido" />
             </ui:VisualElement>
+            <ui:VisualElement name="footer" style="align-items: flex-start; flex-direction: column; width: 86px; justify-content: space-around;">
+                <ui:Toggle label="Toggle" name="ToggleModificar" style="flex-direction: row-reverse; justify-content: flex-start; align-items: auto;" />
+                <ui:Button text="Crear" display-tooltip-when-elided="true" name="BotonCrear" />
+            </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="derecha" style="width: 395px; flex-direction: row; align-items: center; justify-content: space-around; flex-wrap: wrap;">
-            <ui:VisualElement name="Tarjeta1" class="Tarjeta">
-                <ui:VisualElement name="top" class="FotoAkali" />
-                <ui:VisualElement name="mid" style="height: 170px;">
-                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="bottom" style="justify-content: flex-start; flex-direction: column; align-items: stretch; height: 130px;">
-                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Apellido" style="font-size: 50px; -unity-text-align: middle-center;" />
-                </ui:VisualElement>
-            </ui:VisualElement>
-            <ui:VisualElement name="Tarjeta2" class="Tarjeta" style="height: 200px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;);">
-                <ui:VisualElement name="top" class="FotoAkali" />
-                <ui:VisualElement name="mid" style="height: 170px;">
-                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="bottom" style="justify-content: flex-start; flex-direction: column; align-items: stretch; height: 130px;">
-                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Apellido" style="font-size: 50px; -unity-text-align: middle-center;" />
-                </ui:VisualElement>
-            </ui:VisualElement>
-            <ui:VisualElement name="Tarjeta3" class="Tarjeta" style="height: 200px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;);">
-                <ui:VisualElement name="top" class="FotoAkali" />
-                <ui:VisualElement name="mid" style="height: 170px;">
-                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="bottom" style="justify-content: flex-start; flex-direction: column; align-items: stretch; height: 130px;">
-                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Apellido" style="font-size: 50px; -unity-text-align: middle-center;" />
-                </ui:VisualElement>
-            </ui:VisualElement>
-            <ui:VisualElement name="Tarjeta4" class="Tarjeta" style="height: 200px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;);">
-                <ui:VisualElement name="top" class="FotoAkali" />
-                <ui:VisualElement name="mid" style="height: 170px;">
-                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Nombre" style="-unity-text-align: middle-center; font-size: 50px;" />
-                </ui:VisualElement>
-                <ui:VisualElement name="bottom" style="justify-content: flex-start; flex-direction: column; align-items: stretch; height: 130px;">
-                    <ui:Label text="Label" display-tooltip-when-elided="true" name="Apellido" style="font-size: 50px; -unity-text-align: middle-center;" />
-                </ui:VisualElement>
-            </ui:VisualElement>
+            <ui:Instance template="TarjetaP6" name="TarjetaP6" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

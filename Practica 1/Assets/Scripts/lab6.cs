@@ -23,7 +23,7 @@ namespace Lab6_namespace
         {
             VisualElement root = GetComponent<UIDocument>().rootVisualElement;
 
-            contenedor_dcha = root.Q<VisualElement>("Dcha");
+            contenedor_dcha = root.Q<VisualElement>("derecha");
             input_nombre = root.Q<TextField>("InputNombre");
             input_apellido = root.Q<TextField>("InputApellido");
             botonCrear = root.Q<Button>("BotonCrear");
@@ -39,25 +39,28 @@ namespace Lab6_namespace
         {
             if (!toggleModificar.value)
             {
-                VisualTreeAsset plantilla = Resources.Load<VisualTreeAsset>("Tarjeta");
+                VisualTreeAsset plantilla = Resources.Load<VisualTreeAsset>("TarjetaP6");
+                Debug.Log(plantilla);
                 VisualElement tarjetaPlantilla = plantilla.Instantiate();
 
                 contenedor_dcha.Add(tarjetaPlantilla);
 
-                tarjetas_borde_negro();
-                tarjeta_borde_blanco(tarjetaPlantilla);
+                bordeNegro();
+                bordeBlanco(tarjetaPlantilla);
 
                 Individuo individuo = new Individuo(input_nombre.value, input_apellido.value);
                 Tarjeta tarjeta = new Tarjeta(tarjetaPlantilla, individuo);
                 individuoSelec = individuo;
 
                 //serializacion en formato json 
+                /*
                 list_individuos.Add(individuo);
                 list_individuos.ForEach(elem => {
                     Debug.Log(elem.Nombre + " " + elem.Apellido);
                     string jsonIndividuo = JsonUtility.ToJson(elem);
                     Debug.Log(jsonIndividuo);
                 });
+                 */
             }
         }
 
@@ -66,12 +69,16 @@ namespace Lab6_namespace
             VisualElement miTarjeta = e.target as VisualElement;
             individuoSelec = miTarjeta.userData as Individuo;
 
+
+
+            Debug.Log(miTarjeta.name);
+
             input_nombre.SetValueWithoutNotify(individuoSelec.Nombre);
             input_apellido.SetValueWithoutNotify(individuoSelec.Apellido);
             toggleModificar.value = true;
 
-            tarjetas_borde_negro();
-            tarjeta_borde_blanco(miTarjeta);
+            bordeNegro();
+            bordeBlanco(miTarjeta);
         }
 
         void CambioNombre(ChangeEvent<string> evt)
@@ -90,27 +97,27 @@ namespace Lab6_namespace
             }
         }
 
-        void tarjetas_borde_negro()
+        void bordeNegro()
         {
-            List<VisualElement> lista_tarjetas = contenedor_dcha.Children().ToList();
-            lista_tarjetas.ForEach(elem =>
+            List<VisualElement> lt = contenedor_dcha.Children().ToList();
+            lt.ForEach(e =>
             {
-                VisualElement tarjeta = elem.Q("Tarjeta");
+                VisualElement t = e.Q("Tarjeta1");
 
-                tarjeta.style.borderBottomColor = Color.black;
-                tarjeta.style.borderRightColor = Color.black;
-                tarjeta.style.borderTopColor = Color.black;
-                tarjeta.style.borderLeftColor = Color.black;
+                t.style.borderLeftColor = Color.black;
+                t.style.borderRightColor = Color.black;
+                t.style.borderBottomColor = Color.black;
+                t.style.borderTopColor = Color.black;
             });
         }
-        void tarjeta_borde_blanco(VisualElement tar)
+        void bordeBlanco(VisualElement tarj)
         {
-            VisualElement tarjeta = tar.Q("Tarjeta");
-
-            tarjeta.style.borderBottomColor = Color.white;
-            tarjeta.style.borderRightColor = Color.white;
-            tarjeta.style.borderTopColor = Color.white;
-            tarjeta.style.borderLeftColor = Color.white;
+            //VisualElement t = tarj.Q("Tarjeta1");
+            //
+            //t.style.borderTopColor = Color.white;
+            //t.style.borderBottomColor = Color.white;
+            //t.style.borderLeftColor = Color.white;
+            //t.style.borderRightColor = Color.white;
         }
     }
 }

@@ -22,10 +22,13 @@ namespace Lab5b_namespace
             apellidoLabel = tarjetaRoot.Q<Label>("Apellido");
             tarjetaRoot.userData = miIndividuo;
 
+            
             tarjetaRoot.
                 Query(className: "Tarjeta")
                 .Descendents<VisualElement>()
                 .ForEach(elem => elem.pickingMode = PickingMode.Ignore);
+             
+             
 
             UpdateUI();
 

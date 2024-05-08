@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 138035829}
   - component: {fileID: 138035830}
   - component: {fileID: 138035831}
+  - component: {fileID: 138035832}
   m_Layer: 5
   m_Name: UIDocument
   m_TagString: Untagged
@@ -158,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: 97c03f631e011f8438b859d97c21b17c, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 65626c27b67b0604cac4a9b40a34259d, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 238cd6824f7e0b4439aa667e6f1f6a13, type: 3}
   m_SortingOrder: 0
 --- !u!4 &138035827
 Transform:
@@ -218,9 +219,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138035825}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d8e25ad12c0d0a4c94b505a125f9970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &138035832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138035825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b146cb5dc6e4a584998cbec745a9b907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &519420028
