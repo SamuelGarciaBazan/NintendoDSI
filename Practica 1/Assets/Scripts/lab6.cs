@@ -45,12 +45,14 @@ namespace Lab6_namespace
 
                 contenedor_dcha.Add(tarjetaPlantilla);
 
-                bordeNegro();
-                bordeBlanco(tarjetaPlantilla);
+                //bordeNegro();
+                //bordeBlanco(tarjetaPlantilla);
 
                 Individuo individuo = new Individuo(input_nombre.value, input_apellido.value);
                 Tarjeta tarjeta = new Tarjeta(tarjetaPlantilla, individuo);
                 individuoSelec = individuo;
+
+                
 
                 //serializacion en formato json 
                 /*
@@ -72,13 +74,16 @@ namespace Lab6_namespace
 
 
             Debug.Log(miTarjeta.name);
+            Debug.Log(individuoSelec);
+            Debug.Log(input_nombre.name);
+            
 
             input_nombre.SetValueWithoutNotify(individuoSelec.Nombre);
             input_apellido.SetValueWithoutNotify(individuoSelec.Apellido);
             toggleModificar.value = true;
 
-            bordeNegro();
-            bordeBlanco(miTarjeta);
+            //bordeNegro();
+            //bordeBlanco(miTarjeta);
         }
 
         void CambioNombre(ChangeEvent<string> evt)
@@ -112,12 +117,12 @@ namespace Lab6_namespace
         }
         void bordeBlanco(VisualElement tarj)
         {
-            //VisualElement t = tarj.Q("Tarjeta1");
-            //
-            //t.style.borderTopColor = Color.white;
-            //t.style.borderBottomColor = Color.white;
-            //t.style.borderLeftColor = Color.white;
-            //t.style.borderRightColor = Color.white;
+            VisualElement t = tarj.Q("Tarjeta");
+            
+            t.style.borderTopColor = Color.white;
+            t.style.borderBottomColor = Color.white;
+            t.style.borderLeftColor = Color.white;
+            t.style.borderRightColor = Color.white;
         }
     }
 }
