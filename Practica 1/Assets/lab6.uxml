@@ -1,5 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Template name="TarjetaP6" src="project://database/Assets/Resources/TarjetaP6.uxml?fileID=9197481963319205126&amp;guid=dde98979a691a9c4994837e7504347ea&amp;type=3#TarjetaP6" />
     <Style src="project://database/Assets/lab5.uss?fileID=7433441132597879392&amp;guid=5735db23dfa4bc94b9b3d5dc13d5b59d&amp;type=3#lab5" />
     <ui:VisualElement name="contenedor" style="flex-direction: row; justify-content: flex-start; align-items: stretch;">
         <ui:VisualElement name="izquierda" style="width: 310px; background-image: url(&apos;project://database/Assets/Images/Blue%20Fondo.jpg?fileID=2800000&amp;guid=43a05c22e6fbbe04faf1e2c14b144d51&amp;type=3#Blue Fondo&apos;); background-color: rgb(197, 68, 68); -unity-background-image-tint-color: rgb(152, 84, 84); align-items: stretch; justify-content: space-between; height: 300px;">
@@ -19,8 +18,6 @@
                 <ui:Button text="Crear" display-tooltip-when-elided="true" name="BotonCrear" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="derecha" style="width: 395px; flex-direction: row; align-items: center; justify-content: space-around; flex-wrap: wrap;">
-            <ui:Instance template="TarjetaP6" name="TarjetaP6" />
-        </ui:VisualElement>
+        <ui:VisualElement name="derecha" style="width: 395px; flex-direction: row; align-items: center; justify-content: space-around; flex-wrap: wrap;" />
     </ui:VisualElement>
 </ui:UXML>
