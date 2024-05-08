@@ -45,8 +45,8 @@ namespace Lab6_namespace
 
                 contenedor_dcha.Add(tarjetaPlantilla);
 
-                //bordeNegro();
-                //bordeBlanco(tarjetaPlantilla);
+                bordeNegro();
+                bordeBlanco(tarjetaPlantilla);
 
                 Individuo individuo = new Individuo(input_nombre.value, input_apellido.value);
                 Tarjeta tarjeta = new Tarjeta(tarjetaPlantilla, individuo);
@@ -82,8 +82,8 @@ namespace Lab6_namespace
             input_apellido.SetValueWithoutNotify(individuoSelec.Apellido);
             toggleModificar.value = true;
 
-            //bordeNegro();
-            //bordeBlanco(miTarjeta);
+            bordeNegro();
+            bordeBlanco(miTarjeta);
         }
 
         void CambioNombre(ChangeEvent<string> evt)
@@ -113,16 +113,28 @@ namespace Lab6_namespace
                 t.style.borderRightColor = Color.black;
                 t.style.borderBottomColor = Color.black;
                 t.style.borderTopColor = Color.black;
+
+                t.style.borderRightWidth = 5;
+                t.style.borderLeftWidth = 5;
+                t.style.borderBottomWidth = 5;
+                t.style.borderTopWidth = 5;
+
             });
         }
         void bordeBlanco(VisualElement tarj)
         {
-            VisualElement t = tarj.Q("Tarjeta");
+            VisualElement t = tarj.Q("Tarjeta1");
             
             t.style.borderTopColor = Color.white;
             t.style.borderBottomColor = Color.white;
             t.style.borderLeftColor = Color.white;
             t.style.borderRightColor = Color.white;
+
+
+            t.style.borderRightWidth = 5;
+            t.style.borderLeftWidth = 5;
+            t.style.borderBottomWidth = 5;
+            t.style.borderTopWidth = 5;
         }
     }
 }
