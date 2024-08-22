@@ -55,14 +55,14 @@ namespace Lab6_namespace
                 
 
                 //serializacion en formato json 
-                /*
+                
                 list_individuos.Add(individuo);
                 list_individuos.ForEach(elem => {
                     Debug.Log(elem.Nombre + " " + elem.Apellido);
                     string jsonIndividuo = JsonUtility.ToJson(elem);
                     Debug.Log(jsonIndividuo);
                 });
-                 */
+                 
             }
         }
 

@@ -8,7 +8,7 @@ namespace Lab5b_namespace
     {
         public event Action Cambio;
 
-        private string nombre;
+        public string nombre;
         public string Nombre
         {
             get { return nombre; }
@@ -22,7 +22,7 @@ namespace Lab5b_namespace
             }
         }
 
-        private string apellido;
+        public string apellido;
         public string Apellido
         {
             get { return apellido; }
